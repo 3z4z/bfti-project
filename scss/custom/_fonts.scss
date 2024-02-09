@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'poppins-regular';
+  src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'poppins-semibold';
+  src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'poppins-mediumItalic';
+  src: url(../../assets/fonts/Poppins-MediumItalic.ttf);
+}
+
+// font variables
+
+$poppins-regular: 'poppins-regular';
+$poppins-semibold: 'poppins-semibold';
+$poppins-mediumItalic: 'poppins-mediumItalic';
+
+// font classes
+.fs-md {
+  font-size: 0.875rem !important;
+}
+
+.fw-semibold {
+  font-family: 'poppins-semibold' !important;
+}
+
+.fw-medium {
+  &.font-italic {
+    font-family: $poppins-mediumItalic;
+  }
+}

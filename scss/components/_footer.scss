@@ -1,0 +1,26 @@
+.footer {
+  a {
+    color: $white;
+    &:hover {
+      color: $primary-light;
+    }
+  }
+  .footer-body {
+    background-color: $primary;
+    color: $white;
+    padding-bottom: 2.75rem;
+    h4 {
+      margin-top: 2.75rem;
+      margin-bottom: 2rem;
+    }
+    ul {
+      > li {
+        margin-bottom: 0.75rem;
+      }
+    }
+  }
+  .copyright {
+    padding: 2rem 0;
+    background-color: $primary-dark;
+  }
+}

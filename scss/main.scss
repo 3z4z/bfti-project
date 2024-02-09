@@ -1,0 +1,71 @@
+@import '../scss/custom/fonts';
+@import '../scss/custom/colors';
+
+@import '../scss/components/topbar';
+@import '../scss/components/navbar';
+@import '../scss/components/footer';
+@import '../scss/components/forms';
+@import '../scss/components/buttons';
+
+@import '../scss/pages/training';
+
+body {
+  font-family: $poppins-regular;
+  font-size: 0.9375rem;
+  color: $body-color;
+}
+
+ul,
+dl,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all linear 0.1s;
+  &::after,
+  &::before {
+    transition: all linear 0.1s;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 1.9375rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $poppins-semibold;
+}
+
+.common-title {
+  h4 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1.5px;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background-color: $primary;
+    }
+  }
+  border-bottom: 1px solid #ccc;
+  margin: 3.75rem 0 2.75rem;
+}

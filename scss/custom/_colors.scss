@@ -1,0 +1,23 @@
+$primary: #006d2c;
+$primary-dark: #00531d;
+$primary-light: #d4e6db;
+$primary-2: #387e52;
+$white: #fff;
+$black: #000;
+$danger: #cc0000;
+$danger-dark: #af0d0d;
+
+$body-color: #1b1b22;
+$body-heading-color: #132656;
+
+$sublink-odd-bg: #f9f9f9;
+$sublink-even-bg: #eee;
+
+// color classes
+.text-primary {
+  color: $primary !important;
+}
+
+.text-primary-dark {
+  color: $primary-dark !important;
+}
