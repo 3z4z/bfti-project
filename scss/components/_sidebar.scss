@@ -1,0 +1,46 @@
+
+.sidebar-cats,.sidebar-about {
+    li {
+      margin-bottom: 1.55rem;
+      a {
+        color: $body-heading-color;
+        font-family: $poppins-semibold;
+      }
+    }
+  }
+  
+  .sidebar-shortcuts {
+    background-color: $primary;
+    border-radius: 0.75rem;
+    padding: 1.5rem 2.5rem 1.5rem 0;
+    li {
+      width: 100%;
+      padding: 0.65rem 0 0.65rem 1.25rem;
+      position: relative;
+      a {
+        color: $white;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-left: 0 solid  rgba($white, 0.35);
+        border-bottom: 8px solid transparent;
+      }
+      &:hover {
+        background-color: $primary-dark;
+        a {
+          color: $primary-light;
+        }
+        &::after {
+          border-left: 8px solid rgba($white, 0.35);
+        }
+      }
+    }
+  }
+  

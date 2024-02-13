@@ -1,0 +1,95 @@
+.banner {
+  padding: 3rem 0;
+  background-color: $gray-100;
+  .banner-middle {
+    background-color: $primary;
+    > div.d-flex {
+      align-items: center;
+      padding: 0.75rem 0;
+      span {
+        font-size: 0.75rem;
+        font-family: $poppins-medium;
+        color: $white;
+        &:last-child {
+          margin-left: 1rem;
+          padding: 0.15rem 1rem;
+          background-color: $danger;
+        }
+      }
+    }
+  }
+  .bfti-updates {
+    background-color: $primary-light-2;
+    padding: 1rem 0.75rem 0.75rem;
+    height: 100%;
+    h4 {
+      color: $primary;
+    }
+    .update-card {
+      margin-bottom: 0.875rem;
+      font-size: 0.8125rem;
+      padding: 0.75rem;
+      border: 1px solid $primary-light-3;
+      border-left-width: 6px;
+      background-color: $white;
+    }
+  }
+}
+
+.home-card {
+  margin-bottom: 1.5rem;
+  .d-flex {
+    span {
+      color: $white;
+      font-family: $poppins-medium;
+      padding: 0.15rem 1rem;
+      font-size: 0.8125rem;
+      &:first-child {
+        background-color: $primary;
+        margin-right: 1rem;
+      }
+      &:last-child {
+        background-color: $danger;
+      }
+    }
+  }
+  h5 {
+    color: $body-heading-color;
+    margin-bottom: 1.75rem;
+  }
+  button {
+    background-color: $primary;
+    padding: 0.35rem 1.25rem;
+    font-size: 0.875rem;
+    color: $white;
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: $primary-dark;
+    }
+  }
+}
+
+.home-thumb {
+  padding-bottom: 0.5rem;
+  h6 {
+    color: $body-heading-color;
+    margin-bottom: 0.25rem;
+  }
+  span {
+    color: $primary;
+    font-size: 0.6875rem;
+  }
+  .row {
+    padding-right: 0.75rem;
+  }
+  .col-8 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba($border-color, 0.5);
+  }
+  &:last-child {
+    .col-8 {
+      border-bottom: none;
+    }
+  }
+}

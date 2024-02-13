@@ -5,3 +5,37 @@
     color: $body-heading-color;
   }
 }
+
+.training-card {
+  margin-bottom: 4.5rem;
+  > img {
+    width: 100%;
+  }
+  >a {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $body-heading-color;
+    font-family: $poppins-semibold;
+    font-size: 1.125rem;
+  }
+  .open-badge {
+    display: inline-block;
+    font-family: $poppins-semibold;
+    color: $white;
+    padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+    background-image: url(../../assets/images/training/badge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .close-badge {
+    display: inline-block;
+    font-family: $poppins-semibold;
+    color: $white;
+    padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+    background-image: url(../../assets/images/training/close-badge.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

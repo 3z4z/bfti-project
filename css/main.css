@@ -3,8 +3,16 @@
   src: url(../../assets/fonts/Poppins-Regular.ttf);
 }
 @font-face {
+  font-family: "poppins-medium";
+  src: url(../../assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
   font-family: "poppins-semibold";
   src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "poppins-extrabold";
+  src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
 }
 @font-face {
   font-family: "poppins-mediumItalic";
@@ -28,6 +36,10 @@
 
 .text-primary-dark {
   color: #00531d !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #47567b !important;
 }
 
 .bfti-topbar {
@@ -153,6 +165,49 @@
   background-color: #00531d;
 }
 
+.sidebar-cats li, .sidebar-about li {
+  margin-bottom: 1.55rem;
+}
+.sidebar-cats li a, .sidebar-about li a {
+  color: #132656;
+  font-family: "poppins-semibold";
+}
+
+.sidebar-shortcuts {
+  background-color: #006d2c;
+  border-radius: 0.75rem;
+  padding: 1.5rem 2.5rem 1.5rem 0;
+}
+.sidebar-shortcuts li {
+  width: 100%;
+  padding: 0.65rem 0 0.65rem 1.25rem;
+  position: relative;
+}
+.sidebar-shortcuts li a {
+  color: #fff;
+}
+.sidebar-shortcuts li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 0 solid rgba(255, 255, 255, 0.35);
+  border-bottom: 8px solid transparent;
+}
+.sidebar-shortcuts li:hover {
+  background-color: #00531d;
+}
+.sidebar-shortcuts li:hover a {
+  color: #d4e6db;
+}
+.sidebar-shortcuts li:hover::after {
+  border-left: 8px solid rgba(255, 255, 255, 0.35);
+}
+
 .form-control:focus {
   box-shadow: none;
   border-color: #006d2c;
@@ -181,6 +236,179 @@
 .training-body h5,
 .training-body h6 {
   color: #132656;
+}
+
+.training-card {
+  margin-bottom: 4.5rem;
+}
+.training-card > img {
+  width: 100%;
+}
+.training-card > a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #132656;
+  font-family: "poppins-semibold";
+  font-size: 1.125rem;
+}
+.training-card .open-badge {
+  display: inline-block;
+  font-family: "poppins-semibold";
+  color: #fff;
+  padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+  background-image: url(../../assets/images/training/badge.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.training-card .close-badge {
+  display: inline-block;
+  font-family: "poppins-semibold";
+  color: #fff;
+  padding: 0.35rem 1.5rem 0.35rem 0.5rem;
+  background-image: url(../../assets/images/training/close-badge.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.training-status {
+  position: relative;
+  padding: 1.5rem 3rem;
+  border: 2px solid #cc0000;
+  border-radius: 1rem;
+  margin: 3rem 0;
+}
+.training-status h5 {
+  color: #132656;
+  margin-left: 0.75rem;
+}
+.training-status .mini-status {
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #006d2c;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.25rem 1.5rem;
+  font-size: 0.915rem;
+}
+
+.training-detail-text {
+  font-size: 0.9375rem;
+}
+.training-detail-text p {
+  margin-bottom: 2rem;
+}
+.training-detail-text p span {
+  font-family: "poppins-extrabold";
+}
+.training-detail-text ul li {
+  font-family: "poppins-semibold";
+  margin-bottom: 1rem;
+}
+.training-detail-text ul li img {
+  margin-right: 0.5rem;
+}
+.training-detail-text button {
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0.45rem 1.5rem;
+  background-color: #cc0000;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.banner {
+  padding: 3rem 0;
+  background-color: #f5f6fa;
+}
+.banner .banner-middle {
+  background-color: #006d2c;
+}
+.banner .banner-middle > div.d-flex {
+  align-items: center;
+  padding: 0.75rem 0;
+}
+.banner .banner-middle > div.d-flex span {
+  font-size: 0.75rem;
+  font-family: "poppins-medium";
+  color: #fff;
+}
+.banner .banner-middle > div.d-flex span:last-child {
+  margin-left: 1rem;
+  padding: 0.15rem 1rem;
+  background-color: #cc0000;
+}
+.banner .bfti-updates {
+  background-color: #aedfc5;
+  padding: 1rem 0.75rem 0.75rem;
+  height: 100%;
+}
+.banner .bfti-updates h4 {
+  color: #006d2c;
+}
+.banner .bfti-updates .update-card {
+  margin-bottom: 0.875rem;
+  font-size: 0.8125rem;
+  padding: 0.75rem;
+  border: 1px solid #7ac696;
+  border-left-width: 6px;
+  background-color: #fff;
+}
+
+.home-card {
+  margin-bottom: 1.5rem;
+}
+.home-card .d-flex span {
+  color: #fff;
+  font-family: "poppins-medium";
+  padding: 0.15rem 1rem;
+  font-size: 0.8125rem;
+}
+.home-card .d-flex span:first-child {
+  background-color: #006d2c;
+  margin-right: 1rem;
+}
+.home-card .d-flex span:last-child {
+  background-color: #cc0000;
+}
+.home-card h5 {
+  color: #132656;
+  margin-bottom: 1.75rem;
+}
+.home-card button {
+  background-color: #006d2c;
+  padding: 0.35rem 1.25rem;
+  font-size: 0.875rem;
+  color: #fff;
+  border: none;
+}
+.home-card button:hover, .home-card button:focus {
+  background-color: #00531d;
+}
+
+.home-thumb {
+  padding-bottom: 0.5rem;
+}
+.home-thumb h6 {
+  color: #132656;
+  margin-bottom: 0.25rem;
+}
+.home-thumb span {
+  color: #006d2c;
+  font-size: 0.6875rem;
+}
+.home-thumb .row {
+  padding-right: 0.75rem;
+}
+.home-thumb .col-8 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(71, 86, 123, 0.5);
+}
+.home-thumb:last-child .col-8 {
+  border-bottom: none;
 }
 
 body {
@@ -225,7 +453,7 @@ h6 {
 }
 
 .common-title {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #47567b;
   margin: 3.75rem 0 2.75rem;
 }
 .common-title h4 {
@@ -242,4 +470,18 @@ h6 {
   width: 100px;
   height: 3px;
   background-color: #006d2c;
+}
+
+.breadcrumb {
+  margin: 2rem 0;
+}
+.breadcrumb a, .breadcrumb span {
+  font-size: 0.875rem;
+  color: #132656;
+  font-family: "poppins-medium";
+}
+
+.training-detail-body h1 {
+  color: #132656;
+  margin-bottom: 2rem;
 }

@@ -1,0 +1,49 @@
+.training-status {
+  position: relative;
+  padding: 1.5rem 3rem;
+  border: 2px solid $danger;
+  border-radius: 1rem;
+  margin: 3rem 0;
+  h5 {
+    color: $body-heading-color;
+    margin-left: 0.75rem;
+  }
+  .mini-status {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary;
+    color: $white;
+    border-radius: 0.5rem;
+    padding: 0.25rem 1.5rem;
+    font-size: 0.915rem;
+  }
+}
+
+.training-detail-text {
+    font-size: 0.9375rem;
+  p {
+    margin-bottom: 2rem;
+    span {
+      font-family: $poppins-extrabold;
+    }
+  }
+  ul {
+    li {
+        img {
+            margin-right: 0.5rem;
+        }
+        font-family: $poppins-semibold;
+        margin-bottom: 1rem;
+    }
+  }
+  button {
+    margin-bottom: 1rem;
+    border: none;
+    padding: 0.45rem 1.5rem;
+    background-color: $danger;
+    color: $white;
+    border-radius: 0.25rem;
+  }
+}

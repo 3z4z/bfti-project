@@ -1,17 +1,22 @@
 $primary: #006d2c;
 $primary-dark: #00531d;
 $primary-light: #d4e6db;
+$primary-light-2: #aedfc5;
+$primary-light-3: #7ac696;
 $primary-2: #387e52;
 $white: #fff;
 $black: #000;
 $danger: #cc0000;
 $danger-dark: #af0d0d;
+$amber-red: #e9082e;
 
 $body-color: #1b1b22;
 $body-heading-color: #132656;
+$border-color: #47567b;
 
 $sublink-odd-bg: #f9f9f9;
 $sublink-even-bg: #eee;
+$gray-100: #f5f6fa;
 
 // color classes
 .text-primary {
@@ -20,4 +25,8 @@ $sublink-even-bg: #eee;
 
 .text-primary-dark {
   color: $primary-dark !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $border-color !important;
 }

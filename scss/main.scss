@@ -4,10 +4,13 @@
 @import '../scss/components/topbar';
 @import '../scss/components/navbar';
 @import '../scss/components/footer';
+@import '../scss/components/sidebar';
 @import '../scss/components/forms';
 @import '../scss/components/buttons';
 
 @import '../scss/pages/training';
+@import '../scss/pages/training-detail';
+@import '../scss/pages/home';
 
 body {
   font-family: $poppins-regular;
@@ -51,6 +54,8 @@ h6 {
 }
 
 .common-title {
+  border-bottom: 1px solid $border-color;
+  margin: 3.75rem 0 2.75rem;
   h4 {
     position: relative;
     display: inline-block;
@@ -66,6 +71,20 @@ h6 {
       background-color: $primary;
     }
   }
-  border-bottom: 1px solid #ccc;
-  margin: 3.75rem 0 2.75rem;
+}
+
+.breadcrumb {
+  margin: 2rem 0;
+  a,span {
+    font-size: 0.875rem;
+    color: $body-heading-color;
+    font-family: $poppins-medium;
+  }
+}
+
+.training-detail-body {
+  h1 {
+    color: $body-heading-color;
+    margin-bottom: 2rem;
+  }
 }
