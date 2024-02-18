@@ -1,0 +1,26 @@
+.bfti-history,
+.bfti-mission,
+.bfti-vision {
+  border-bottom: 1px solid $border-color;
+  h4 {
+    margin-bottom: 2rem;
+    color: $body-heading-color;
+  }
+}
+.bfti-history {
+  padding-bottom: 2.5rem;
+  padding-top: 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 1.5rem;
+  }
+}
+.bfti-mission {
+  padding: 2.5rem 0;
+}
+.bfti-vision {
+  border-bottom: none;
+  padding: 2.5rem 0 0;
+  @media screen and (min-width: 768px) {
+    padding: 2.5rem 0 4rem;
+  }
+}

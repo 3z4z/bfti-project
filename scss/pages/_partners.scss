@@ -1,0 +1,22 @@
+#partners {
+  h5 {
+    margin-bottom: 2.75rem;
+  }
+  .partner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 3px rgba($primary, 0.25);
+    text-align: center;
+    padding: 2.5rem 2rem;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: 80px;
+    }
+  }
+  @media screen and (min-width: 991px) {
+    margin-bottom: 4rem;
+  }
+}

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row py-4 align-items-center pe-0">
         <div class="col-lg-2 col-md-3 text-center text-md-start">
-          <img src="/assets/images/bfti-logo.png" height="71" alt="bfti-logo" />
+          <a href="/index.html"><img src="/assets/images/bfti-logo.png" height="71" alt="bfti-logo" /></a>
         </div>
         <div class="col-lg-10 col-md-9 row pe-0 align-items-center">
           <div class="col-xl-9 text-xl-center text-md-end text-center">
@@ -20,41 +20,38 @@
   </div>
   <div class="navmenu-container">
     <div class="container">
+      <div class="nav__toggle d-flex align-items-center justify-content-between d-lg-none">
+        <a href="/pages/about-us.html" class="text-white">About BFTI</a>
+        <button class="nav__toggler">
+          <img src="/assets/icons/burger-menu.svg" class="nav__open" alt="burger-menu" />
+          <img src="/assets/icons/close.svg" class="nav__close" alt="close" />
+        </button>
+      </div>
       <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link">About BFTI </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Research</a>
-          <ul class="menu">
-            <li><a href="#">menu 1</a></li>
-            <li>
-              <a href="#">menu 3</a>
-              <ul>
-                <li><a href="#">sub menu 1</a></li>
-                <li><a href="#">sub menu 2</a></li>
-                <li><a href="#">sub menu 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">menu 2</a></li>
+        <li class="nav-link d-none d-lg-block"><a href="/pages/about-us.html">About BFTI</a></li>
+        <li class="nav-link">
+          <a href="#">Research <img class="ms-2" src="/assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+          <ul class="submenu">
+            <li><a href="/pages/research.html">Research Homepage</a></li>
+            <li><a href="#">menu 2 dropdown 2</a></li>
+            <li><a href="#">menu 2 dropdown 3</a></li>
           </ul>
         </li>
-        <li class="nav-item active">
-          <a href="#" class="nav-link">Training</a>
+        <li class="nav-link">
+          <a href="#">Training<img class="ms-2" src="/assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+          <ul class="submenu">
+            <li><a href="/pages/training.html">Training Homepage</a></li>
+            <li><a href="#">menu 2 dropdown 2</a></li>
+            <li><a href="#">menu 2 dropdown 3</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Academic</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Partnerships</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Events & Activities</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">Contact</a>
-        </li>
+        <li class="nav-link"><a href="#">Academic</a></li>
+        <li class="nav-link"><a href="/pages/partnership.html">Partnerships</a></li>
+        <li class="nav-link"><a href="#">Events & Activities</a></li>
+        <li class="nav-link"><a href="#">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<script src="/js/script.js"></script>

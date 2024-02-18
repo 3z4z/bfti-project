@@ -1,95 +1,176 @@
-.banner {
-  padding: 3rem 0;
-  background-color: $gray-100;
-  .banner-middle {
-    background-color: $primary;
-    > div.d-flex {
-      align-items: center;
-      padding: 0.75rem 0;
+#home {
+  bfti-sidebar-shorts {
+    .sidebar-shortcuts {
+      border-radius: 0;
+      margin-top: 1rem;
+      @media screen and (min-width: 991px) {
+        margin-top: 0;
+      }
+    }
+  }
+  .banner {
+    padding: 1rem 0;
+    background-color: $gray-100;
+    .banner-middle {
+      background-color: $primary;
+      > div.d-flex {
+        align-items: center;
+        padding: 1.5rem 0;
+        span {
+          font-size: 0.75rem;
+          font-family: $poppins-medium;
+          color: $white;
+          &:last-child {
+            margin-left: 1rem;
+            padding: 0.15rem 1rem;
+            background-color: $danger;
+          }
+        }
+      }
+    }
+    .bfti-updates {
+      background-color: $primary-light-2;
+      padding: 1rem 0.75rem 0.75rem;
+      height: 100%;
+      .update-card-container {
+        max-height: 64vh;
+        overflow-y: auto;
+        h4 {
+          color: $primary;
+        }
+        .update-card {
+          margin-bottom: 0.5rem;
+          font-size: 0.8125rem;
+          padding: 0.75rem;
+          border: 1px solid $primary-light-3;
+          border-left-width: 6px;
+          background-color: $white;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        @media screen and (min-width: 1200px) {
+          max-height: 62vh;
+        }
+        @media screen and (min-width: 1400px) {
+          max-height: 53vh;
+        }
+        @media screen and (min-width: 1600px) {
+          max-height: 51vh;
+        }
+        @media screen and (min-width: 1800px) {
+          max-height: 44vh;
+        }
+      }
+    }
+    @media screen and (min-width: 991px) {
+      padding: 3rem 0;
+    }
+  }
+
+  .common-title {
+    h4 {
+      color: $body-heading-color;
+    }
+  }
+
+  .home-card {
+    margin-bottom: 1.5rem;
+    .d-flex {
       span {
-        font-size: 0.75rem;
-        font-family: $poppins-medium;
         color: $white;
+        font-family: $poppins-medium;
+        padding: 0.15rem 1rem;
+        font-size: 0.8125rem;
+        &:first-child {
+          background-color: $primary;
+          margin-right: 1rem;
+        }
         &:last-child {
-          margin-left: 1rem;
-          padding: 0.15rem 1rem;
           background-color: $danger;
         }
       }
     }
-  }
-  .bfti-updates {
-    background-color: $primary-light-2;
-    padding: 1rem 0.75rem 0.75rem;
-    height: 100%;
-    h4 {
-      color: $primary;
+    h5 {
+      color: $body-heading-color;
+      margin-bottom: 1.75rem;
     }
-    .update-card {
-      margin-bottom: 0.875rem;
-      font-size: 0.8125rem;
-      padding: 0.75rem;
-      border: 1px solid $primary-light-3;
-      border-left-width: 6px;
-      background-color: $white;
-    }
-  }
-}
-
-.home-card {
-  margin-bottom: 1.5rem;
-  .d-flex {
-    span {
+    button {
+      background-color: $primary;
+      padding: 0.35rem 1.25rem;
+      font-size: 0.875rem;
       color: $white;
-      font-family: $poppins-medium;
-      padding: 0.15rem 1rem;
-      font-size: 0.8125rem;
-      &:first-child {
-        background-color: $primary;
-        margin-right: 1rem;
-      }
-      &:last-child {
-        background-color: $danger;
+      border: none;
+      &:hover,
+      &:focus {
+        background-color: $primary-dark;
       }
     }
   }
-  h5 {
-    color: $body-heading-color;
-    margin-bottom: 1.75rem;
-  }
-  button {
-    background-color: $primary;
-    padding: 0.35rem 1.25rem;
-    font-size: 0.875rem;
-    color: $white;
-    border: none;
-    &:hover,
-    &:focus {
-      background-color: $primary-dark;
-    }
-  }
-}
 
-.home-thumb {
-  padding-bottom: 0.5rem;
-  h6 {
-    color: $body-heading-color;
-    margin-bottom: 0.25rem;
-  }
-  span {
-    color: $primary;
-    font-size: 0.6875rem;
-  }
-  .row {
-    padding-right: 0.75rem;
-  }
-  .col-8 {
+  .home-thumb {
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid rgba($border-color, 0.5);
-  }
-  &:last-child {
+    width: 100%;
+    h6 {
+      color: $body-heading-color;
+      margin-bottom: 0.25rem;
+    }
+    span {
+      color: $primary;
+      font-size: 0.6875rem;
+    }
+    .row {
+      padding-right: 0.75rem;
+    }
     .col-8 {
-      border-bottom: none;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba($border-color, 0.5);
+    }
+    &:last-child {
+      .col-8 {
+        border-bottom: none;
+      }
+    }
+    @media screen and (min-width: 576px) {
+      width: 50%;
+      &:last-child {
+        .col-8 {
+          border-bottom: 1px solid rgba($border-color, 0.5);
+        }
+      }
+    }
+    @media screen and (min-width: 991px) {
+      width: 100%;
+      &:last-child {
+        .col-8 {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  .partners {
+    padding-bottom: 3rem;
+    h4 {
+      margin: 2rem 0;
+      text-align: center;
+      color: $body-heading-color;
+    }
+    .d-flex {
+      div {
+        width: calc(100% / 3);
+        img {
+          width: 100%;
+          max-height: 120px;
+          object-fit: contain;
+        }
+        @media screen and (min-width: 991px) {
+          width: calc(100% / 5);
+        }
+        @media screen and (min-width: 1200px) {
+          width: calc(100% / 7);
+        }
+      }
     }
   }
 }

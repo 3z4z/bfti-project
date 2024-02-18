@@ -1,46 +1,89 @@
-
-.sidebar-cats,.sidebar-about {
-    li {
-      margin-bottom: 1.55rem;
-      a {
-        color: $body-heading-color;
-        font-family: $poppins-semibold;
-      }
+.sidebar-cats,
+.sidebar-about {
+  li {
+    margin-bottom: 1.55rem;
+    a {
+      color: $body-heading-color;
+      font-family: $poppins-semibold;
     }
   }
-  
-  .sidebar-shortcuts {
-    background-color: $primary;
-    border-radius: 0.75rem;
-    padding: 1.5rem 2.5rem 1.5rem 0;
-    li {
-      width: 100%;
-      padding: 0.65rem 0 0.65rem 1.25rem;
-      position: relative;
+}
+
+.sidebar-shortcuts {
+  margin-top: 3rem;
+  background-color: $primary;
+  border-radius: 0.75rem;
+  padding: 1.5rem 2.5rem 1.5rem 0;
+  li {
+    margin: 0.25rem 0;
+    width: 100%;
+    padding: 0.52rem 0 0.52rem 1.25rem;
+    position: relative;
+    a {
+      color: $white;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-left: 0 solid rgba($white, 0.35);
+      border-bottom: 8px solid transparent;
+    }
+    &:hover {
+      background-color: $primary-dark;
       a {
-        color: $white;
+        color: $primary-light;
       }
       &::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 0;
-        height: 0;
-        border-top: 8px solid transparent;
-        border-left: 0 solid  rgba($white, 0.35);
-        border-bottom: 8px solid transparent;
-      }
-      &:hover {
-        background-color: $primary-dark;
-        a {
-          color: $primary-light;
-        }
-        &::after {
-          border-left: 8px solid rgba($white, 0.35);
-        }
+        border-left: 8px solid rgba($white, 0.35);
       }
     }
   }
-  
+}
+
+.sidebar-directors {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  .director-thumb {
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: $primary-light;
+    padding: 0.75rem;
+  }
+  .w-35 {
+    width: 35%;
+    padding-right: 1rem;
+    img {
+      border: 1px solid $primary-light-3;
+    }
+  }
+  .w-65 {
+    width: 65%;
+    small {
+      color: $primary;
+      font-family: $poppins-medium;
+      font-size: 0.625rem;
+    }
+    p {
+      margin-bottom: 0;
+      font-family: $poppins-semibold;
+      color: $body-heading-color;
+      font-size: 0.75rem;
+    }
+  }
+  .director-thumb-info {
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+    font-family: $poppins-medium;
+    color: $body-heading-color;
+  }
+  @media screen and (min-width: 991px) {
+    margin-top: 6rem;
+  }
+}

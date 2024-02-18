@@ -11,9 +11,9 @@
   > img {
     width: 100%;
   }
-  >a {
+  > a {
     display: inline-block;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     color: $body-heading-color;
     font-family: $poppins-semibold;
     font-size: 1.125rem;
@@ -37,5 +37,13 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+  }
+}
+
+.col-lg-4 {
+  &:last-child {
+    .training-card {
+      margin-bottom: 0;
+    }
   }
 }

@@ -1,0 +1,49 @@
+#category {
+  @media screen and (min-width: 991px) {
+    margin-bottom: 5rem;
+  }
+  .col-lg-4 {
+    .category-card {
+      margin-bottom: 3rem;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          font-family: $poppins-medium;
+          color: $white;
+          padding: 0.125rem 0.5rem;
+          font-size: 0.7rem;
+          &:first-child {
+            margin-right: 0.25rem;
+            color: $white;
+            background-color: $primary;
+          }
+          &:last-child {
+            background-color: $danger;
+          }
+        }
+      }
+      h5 {
+        color: $body-heading-color;
+        margin-bottom: 1.75rem;
+        font-size: 1.125rem;
+      }
+      button {
+        font-family: $poppins-medium;
+        background-color: $primary-light;
+        color: $primary;
+        border: none;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.125rem;
+      }
+    }
+    &:last-child {
+      .category-card {
+        margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

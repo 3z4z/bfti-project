@@ -1,0 +1,19 @@
+.event-speaker-info {
+  background-color: $primary-light;
+  border-radius: 0.75rem;
+  padding: 1rem 1rem 2rem;
+  img {
+    border-radius: 0.5rem;
+  }
+  h5 {
+    margin: 1rem 0;
+    font-size: 1.16875rem;
+  }
+  p {
+    margin: 0;
+    line-height: 1.75;
+    > span {
+      font-family: $poppins-extrabold;
+    }
+  }
+}

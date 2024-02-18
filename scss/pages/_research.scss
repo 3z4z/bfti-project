@@ -1,0 +1,96 @@
+#research {
+  .research-card-container {
+    .research-card {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid $border-color;
+      .col-md-8 {
+        div {
+          display: flex;
+          flex-wrap: wrap;
+          span {
+            font-family: $poppins-medium;
+            color: $white;
+            padding: 0.125rem 0.5rem;
+            font-size: 0.7rem;
+            &:first-child {
+              margin-right: 0.25rem;
+              color: $white;
+              background-color: $primary;
+            }
+            &:last-child {
+              background-color: $danger;
+            }
+          }
+        }
+        h5 {
+          color: $body-heading-color;
+        }
+        button {
+          font-family: $poppins-medium;
+          background-color: $primary-light;
+          color: $primary;
+          border: none;
+          padding: 0.25rem 0.75rem;
+          border-radius: 0.125rem;
+        }
+      }
+      &:first-child {
+        padding-top: 0;
+      }
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+  }
+  .research-card-grid {
+    .col-lg-4 {
+      &:last-child {
+        .research-card {
+          margin-bottom: 0;
+        }
+      }
+      @media screen and (min-width: 768px) {
+        &:nth-last-child(-n + 3) {
+          .research-card {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .research-card {
+      margin-bottom: 3rem;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        span {
+          font-family: $poppins-medium;
+          color: $white;
+          padding: 0.125rem 0.5rem;
+          font-size: 0.7rem;
+          &:first-child {
+            margin-right: 0.25rem;
+            color: $white;
+            background-color: $primary;
+          }
+          &:last-child {
+            background-color: $danger;
+          }
+        }
+      }
+      h5 {
+        font-size: 1.125rem;
+        color: $body-heading-color;
+        margin-bottom: 1.5rem;
+      }
+      button {
+        font-family: $poppins-medium;
+        background-color: $primary-light;
+        color: $primary;
+        border: none;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.125rem;
+      }
+    }
+  }
+}
