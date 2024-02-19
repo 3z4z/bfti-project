@@ -1120,6 +1120,85 @@
   margin-top: 1.5rem;
 }
 
+#gallery {
+  padding-bottom: 2rem;
+}
+#gallery p {
+  font-size: 0.875rem;
+  font-family: "poppins-medium";
+}
+#gallery .gallery-video {
+  position: relative;
+}
+#gallery .gallery-video a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#gallery .gallery-video a img {
+  height: 60px;
+}
+@media screen and (min-width: 991px) {
+  #gallery .gallery-video a img {
+    height: 80px;
+  }
+}
+@media screen and (min-width: 991px) {
+  #gallery {
+    padding-bottom: 4rem;
+  }
+}
+
+#trade-data {
+  margin-bottom: 3rem;
+}
+#trade-data .col-lg-9 .common-title {
+  margin-top: 3.2rem;
+}
+#trade-data .trade-data-card {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #47567b;
+}
+#trade-data .trade-data-card:first-child {
+  padding-top: 0;
+}
+#trade-data .trade-data-card:last-child {
+  border-bottom: none;
+}
+#trade-data .trade-data-card .row .col-lg-4 .trade-data-img {
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 83, 29, 0.25);
+  border-radius: 1rem;
+  text-align: center;
+}
+#trade-data .trade-data-card .row .col-lg-4 .trade-data-img img {
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#trade-data .trade-data-card .row .col-lg-8 {
+  display: flex;
+  flex-direction: column;
+}
+#trade-data .trade-data-card .row .col-lg-8 h4 {
+  font-size: 1.5625rem;
+}
+#trade-data .trade-data-card .row .col-lg-8 a {
+  margin-bottom: 2.25rem;
+  color: #006d2c;
+  font-size: 1.1875rem;
+}
+#trade-data .trade-data-card .row .col-lg-8 button {
+  background-color: #00531d;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 3rem;
+  font-size: 1.09375rem;
+  font-family: "poppins-semibold";
+}
+
 body {
   font-family: "poppins-regular";
   font-size: 0.9375rem;
@@ -1158,6 +1237,28 @@ h4,
 h5,
 h6 {
   font-family: "poppins-semibold";
+}
+
+.common-title-lg {
+  border-bottom: 1px solid #47567b;
+  margin: 3.2rem 0 2.75rem;
+}
+.common-title-lg h2 {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+  color: #132656;
+}
+.common-title-lg h2::after {
+  content: "";
+  position: absolute;
+  bottom: -1.5px;
+  left: 0;
+  width: 100px;
+  height: 3px;
+  background-color: #006d2c;
 }
 
 .common-title {

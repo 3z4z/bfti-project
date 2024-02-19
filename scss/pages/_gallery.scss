@@ -1,0 +1,25 @@
+#gallery {
+  padding-bottom: 2rem;
+  p {
+    font-size: 0.875rem;
+    font-family: $poppins-medium;
+  }
+  .gallery-video {
+    position: relative;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      img {
+        height: 60px;
+        @media screen and (min-width: 991px) {
+          height: 80px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 991px) {
+    padding-bottom: 4rem;
+  }
+}

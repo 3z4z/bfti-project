@@ -19,6 +19,8 @@
 @import '../scss/pages/events';
 @import '../scss/pages/event-detail';
 @import '../scss/pages/about';
+@import '../scss/pages/gallery';
+@import '../scss/pages/trade-data';
 
 body {
   font-family: $poppins-regular;
@@ -59,6 +61,28 @@ h4,
 h5,
 h6 {
   font-family: $poppins-semibold;
+}
+
+.common-title-lg {
+  border-bottom: 1px solid $border-color;
+  margin: 3.2rem 0 2.75rem;
+  h2 {
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    color: $body-heading-color;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1.5px;
+      left: 0;
+      width: 100px;
+      height: 3px;
+      background-color: $primary;
+    }
+  }
 }
 
 .common-title {
