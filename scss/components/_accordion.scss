@@ -1,0 +1,18 @@
+.accordion {
+  .accordion-item {
+    margin-bottom: 1rem;
+    border-color: transparent;
+    .accordion-button {
+      padding: 0.75rem 1rem;
+      border-radius: 0.15rem !important;
+      color: $white;
+      background-color: $primary;
+      &::after {
+        background-image: url(../../bfti-project/assets/icons/arrow-down.svg);
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

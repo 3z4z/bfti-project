@@ -1,11 +1,9 @@
 #home {
-  bfti-sidebar-shorts {
-    .sidebar-shortcuts {
-      border-radius: 0;
-      margin-top: 1rem;
-      @media screen and (min-width: 991px) {
-        margin-top: 0;
-      }
+  .sidebar-shortcuts {
+    border-radius: 0;
+    margin-top: 1rem;
+    @media screen and (min-width: 991px) {
+      margin-top: 0;
     }
   }
   .banner {
@@ -13,9 +11,17 @@
     background-color: $gray-100;
     .banner-middle {
       background-color: $primary;
+      > p {
+        padding: 0.75rem 1rem;
+        font-size: 0.75rem;
+        background-color: $primary-dark;
+        color: $white;
+        margin-bottom: 0;
+        margin-top: 1.25rem;
+      }
       > div.d-flex {
         align-items: center;
-        padding: 1.5rem 0;
+        padding: 1rem;
         span {
           font-size: 0.75rem;
           font-family: $poppins-medium;
@@ -24,8 +30,22 @@
             margin-left: 1rem;
             padding: 0.15rem 1rem;
             background-color: $danger;
+            border-radius: 0.125rem;
           }
         }
+      }
+      a {
+        padding: 0 1rem;
+        h4 {
+          width: 85%;
+        }
+        span {
+          text-align: right;
+          width: 15%;
+        }
+      }
+      .banner-img-container {
+        padding: 0 1rem;
       }
     }
     .bfti-updates {
@@ -64,7 +84,7 @@
       }
     }
     @media screen and (min-width: 991px) {
-      padding: 3rem 0;
+      padding: 1rem 0 3rem;
     }
   }
 
@@ -118,6 +138,17 @@
     span {
       color: $primary;
       font-size: 0.6875rem;
+    }
+    button {
+      border: 1px solid $primary;
+      color: $primary;
+      background-color: $white;
+      padding: 0.125rem 0.5rem;
+      font-size: 0.75rem;
+      &:hover {
+        background-color: $primary;
+        color: $white;
+      }
     }
     .row {
       padding-right: 0.75rem;

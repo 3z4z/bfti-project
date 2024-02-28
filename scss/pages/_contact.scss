@@ -1,0 +1,45 @@
+#contact {
+  margin-bottom: 4rem;
+  .contact-detail {
+    padding: 3rem 1.75rem;
+  }
+
+  .location-map,
+  .contact-detail {
+    border: 1px solid $primary-2;
+  }
+
+  .location-map {
+    overflow: hidden;
+    iframe {
+      @media screen and (max-width: 991px) {
+        min-height: 200px;
+      }
+    }
+  }
+
+  .contact-form {
+    @media screen and (max-width: 991px) {
+      margin-top: 3rem;
+    }
+    padding: 2.25rem 2.15rem;
+    background-color: $primary-dark;
+    h5 {
+      text-align: center;
+      color: $white;
+      margin-bottom: 2rem;
+    }
+    input,
+    textarea {
+      margin-bottom: 1rem;
+      border-radius: 0.15rem;
+    }
+    button {
+      margin-top: 0.75rem;
+      background-color: $danger;
+      color: $white;
+      padding: 0.25rem 1.25rem;
+      border-radius: 0.15rem;
+    }
+  }
+}

@@ -7,6 +7,7 @@
 @import '../scss/components/sidebar';
 @import '../scss/components/forms';
 @import '../scss/components/buttons';
+@import '../scss/components/accordion';
 @import '../scss/components/history-mission-vission';
 
 @import '../scss/pages/training';
@@ -21,6 +22,11 @@
 @import '../scss/pages/about';
 @import '../scss/pages/gallery';
 @import '../scss/pages/trade-data';
+@import '../scss/pages/contact';
+@import '../scss/pages/career';
+@import '../scss/pages/connect-with-bfti';
+@import '../scss/pages/policy';
+@import '../scss/pages/publications';
 
 body {
   font-family: $poppins-regular;
@@ -48,6 +54,7 @@ ol {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 h2 {
@@ -150,7 +157,8 @@ h6 {
 }
 
 .training-detail-text,
-.event-detail-text {
+.event-detail-text,
+.career-detail-text {
   font-size: 0.9375rem;
   p {
     margin-bottom: 2rem;
@@ -177,6 +185,9 @@ h6 {
     background-color: $danger;
     color: $white;
     border-radius: 0.25rem;
+    &.btn-success {
+      background-color: $primary !important;
+    }
   }
 }
 
@@ -251,5 +262,100 @@ h6 {
         background-color: $primary-light-2;
       }
     }
+  }
+}
+
+.career-banner,
+.connect-banner {
+  margin-top: 2.5rem;
+  position: relative;
+  z-index: 0;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  h1 {
+    margin-bottom: 0;
+    padding: 9.5rem 0;
+    text-align: center;
+    color: $white;
+  }
+}
+
+.trade-data-card,
+.useful-link-card {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid $border-color;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+  .row {
+    .col-lg-4 {
+      .trade-data-img,
+      .useful-link-img {
+        padding: 1.5rem 0;
+        box-shadow: 0 2px 5px rgba($primary-dark, 0.25);
+        border-radius: 1rem;
+        text-align: center;
+        img {
+          height: 120px;
+          object-fit: contain;
+        }
+      }
+    }
+    .col-lg-8 {
+      display: flex;
+      flex-direction: column;
+      h4 {
+        font-size: 1.5625rem;
+      }
+      a {
+        margin-bottom: 2.25rem;
+        color: $primary;
+        font-size: 1.1875rem;
+      }
+      button {
+        background-color: $primary-dark;
+        color: $white;
+        border: none;
+        border-radius: 0.25rem;
+        padding: 0.5rem 3rem;
+        font-size: 1.09375rem;
+        font-family: $poppins-semibold;
+      }
+    }
+  }
+}
+
+.chairman-card {
+  text-align: center;
+  width: 100%;
+  background-color: $primary-light;
+  padding: 1.75rem 1.25rem;
+  border-radius: 0.75rem;
+  span {
+    margin: 0.75rem 0;
+    font-family: $poppins-medium;
+    color: $primary-2;
+  }
+  h5,
+  p {
+    color: $body-heading-color;
+  }
+  h5 {
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-family: $poppins-semibold;
+    margin-bottom: 0;
+    font-size: 0.75rem;
   }
 }

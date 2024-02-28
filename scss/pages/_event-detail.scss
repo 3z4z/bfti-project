@@ -1,19 +1,23 @@
-.event-speaker-info {
-  background-color: $primary-light;
-  border-radius: 0.75rem;
-  padding: 1rem 1rem 2rem;
-  img {
-    border-radius: 0.5rem;
-  }
-  h5 {
-    margin: 1rem 0;
-    font-size: 1.16875rem;
+.related-event-card {
+  a {
+    font-size: 1.125rem;
+    color: $body-heading-color;
+    font-family: $poppins-semibold;
+    margin-bottom: 1rem;
   }
   p {
-    margin: 0;
-    line-height: 1.75;
-    > span {
-      font-family: $poppins-extrabold;
+    padding-left: 0.5rem;
+    color: $white;
+    font-family: $poppins-medium;
+    &.open-badge {
+      background-image: url(../../bfti-project/assets/images/training/badge.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &.close-badge {
+      background-image: url(../../bfti-project/assets/images/training/close-badge.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }

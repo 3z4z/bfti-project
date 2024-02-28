@@ -5,6 +5,7 @@ $primary-light-2: #aedfc5;
 $primary-light-3: #7ac696;
 $primary-light-4: #00a643;
 $primary-2: #387e52;
+$primary-dark-2: #003f14;
 $white: #fff;
 $black: #000;
 $danger: #cc0000;
@@ -36,4 +37,8 @@ $pinterest: #cb1f20;
 
 .border-bottom {
   border-bottom: 1px solid $border-color !important;
+}
+
+.text-danger {
+  color: $amber-red !important;
 }

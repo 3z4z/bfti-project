@@ -1,26 +1,26 @@
 @font-face {
   font-family: 'poppins-regular';
-  src: url(../../assets/fonts/Poppins-Regular.ttf);
+  src: url(../assets/fonts/Poppins-Regular.ttf);
 }
 
 @font-face {
   font-family: 'poppins-medium';
-  src: url(../../assets/fonts/Poppins-Medium.ttf);
+  src: url(../assets/fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
   font-family: 'poppins-semibold';
-  src: url(../../assets/fonts/Poppins-SemiBold.ttf);
+  src: url(../assets/fonts/Poppins-SemiBold.ttf);
 }
 
 @font-face {
   font-family: 'poppins-extrabold';
-  src: url(../../assets/fonts/Poppins-ExtraBold.ttf);
+  src: url(../assets/fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
   font-family: 'poppins-mediumItalic';
-  src: url(../../assets/fonts/Poppins-MediumItalic.ttf);
+  src: url(../assets/fonts/Poppins-MediumItalic.ttf);
 }
 
 // font variables
@@ -44,4 +44,12 @@ $poppins-mediumItalic: 'poppins-mediumItalic';
   &.font-italic {
     font-family: $poppins-mediumItalic;
   }
+}
+
+.fw-medium {
+  font-family: 'poppins-medium' !important;
+}
+
+.fs-sm {
+  font-size: 0.7rem !important;
 }

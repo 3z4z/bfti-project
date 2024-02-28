@@ -4,27 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="/css/lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="shortcut icon" href="/assets/images/fav-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="shortcut icon" href="./assets/images/fav-icon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="d-flex flex-column min-vh-100">
       <div>
-        <bfti-topbar></bfti-topbar>
-        <bfti-nav></bfti-nav>
+        <!-- topbar start -->
+        <div class="bfti-topbar">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center">
+                <span class="fs-md text-primary-dark fw-semibold">22 October 2023 | 12:36pm</span>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center ms-lg-5 justify-content-end justify-content-lg-start">
+                <span class="fs-md text-primary fw-semibold d-none d-sm-inline-block">Follow Us</span>
+                <a href="#" class="ms-2">
+                  <img src="./assets/icons/facebook.svg" height="16" alt="facebook" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./assets/icons/youtube-filled.svg" height="18" alt="youtube-filled" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./assets/icons/twitter.svg" height="16" alt="twitter" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./assets/icons/linkedin.svg" height="14" alt="linkedin" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./assets/icons/user.svg" height="16" alt="user" />
+                </a>
+              </div>
+              <div class="col-lg-3 d-flex ps-lg-5">
+                <input type="text" class="form-control form-control-sm" name="search" />
+                <button class="btn btn-sm btn-primary ms-2">
+                  <img src="./assets/icons/search-alt.svg" height="16" alt="search-alt" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- topbar end -->
+        <!-- navbar start -->
+        <nav class="bfti-navbar">
+          <div class="nav-brand">
+            <div class="container">
+              <div class="row py-4 align-items-center pe-0">
+                <div class="col-lg-2 col-md-3 text-center text-md-start">
+                  <a href="index.html"><img src="./assets/images/bfti-logo.png" height="71" alt="bfti-logo" /></a>
+                </div>
+                <div class="col-lg-10 col-md-9 row pe-0 align-items-center">
+                  <div class="col-xl-9 text-xl-center text-md-end text-center">
+                    <h2 class="mb-0">Bangladesh Foreign Trade Institute</h2>
+                  </div>
+                  <div class="col-xl-3 text-xl-start text-md-end text-center">
+                    <h5 class="fw-medium font-italic ms-xxl-2 mb-0">
+                      <span>BFTI Stands for Excellence in Trade and Economic Research</span>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navmenu-container">
+            <div class="container">
+              <div class="nav-toggle">
+                <a href="./pages/about-us.html">About BFTI</a>
+                <button class="nav-toggler">
+                  <img src="./assets/icons/burger-menu.svg" class="nav__open" alt="burger-menu" />
+                  <img src="./assets/icons/close.svg" class="nav__close" alt="close" />
+                </button>
+              </div>
+              <div class="nav-menu">
+                <ul>
+                  <li class="nav-item"><a href="./pages/about-us.html" class="d-none d-lg-block">About BFTI</a></li>
+                  <li class="nav-item">
+                    <a href="./pages/research.html">Research </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./pages/training.html">Training <img class="ms-2" src="./assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+                    <ul>
+                      <li><a href="./pages/training-details.html">Training detail page</a></li>
+                      <li><a href="#">menu 2</a></li>
+                      <li>
+                        <a href="#">menu 3</a>
+                        <ul>
+                          <li><a href="#">menu 3 submenu 1</a></li>
+                          <li><a href="#">menu 3 submenu 2</a></li>
+                          <li><a href="#">menu 3 submenu 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="./pages/post.html">Academic</a></li>
+                  <li class="nav-item">
+                    <a href="./pages/partnership.html">Partnerships <img class="ms-2" src="./assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+                    <ul>
+                      <li><a href="#">menu 1</a></li>
+                      <li>
+                        <a href="#">menu 2</a>
+                        <ul>
+                          <li><a href="#">menu 2 submenu 1</a></li>
+                          <li><a href="#">menu 2 submenu 2</a></li>
+                          <li><a href="#">menu 2 submenu 3</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">menu 3</a>
+                        <ul>
+                          <li><a href="#">menu 3 submenu 1</a></li>
+                          <li><a href="#">menu 3 submenu 2</a></li>
+                          <li><a href="#">menu 3 submenu 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="./pages/events.html">Events & Activities</a></li>
+                  <li class="nav-item"><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end -->
       </div>
       <!-- home start -->
       <section id="home" class="flex-grow-1">
         <div class="banner">
           <div class="container">
+            <p class="text-danger d-flex mb-0 mb-lg-3">
+              <span class="text-nowrap me-4">News Scroll Here:</span>
+              <marquee class="text-black fw-bold"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut libero officia repudiandae natus ipsam voluptate quis quo! Dolores, incidunt.</marquee
+              >
+            </p>
             <div class="row">
               <div class="col-lg-3 order-lg-0 order-2">
-                <bfti-sidebar-shorts></bfti-sidebar-shorts>
+                <ul class="sidebar-shortcuts">
+                  <li><a href="#">WTO Reference Centre </a></li>
+                  <li><a href="#">Trade Portal</a></li>
+                  <li><a href="./pages/trade-data.html">Trade Data</a></li>
+                  <li><a href="./pages/events.html">Upcoming Events</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="./pages/connect-with-bfti.html">Connect with BFTI</a></li>
+                  <li><a href="./pages/image-gallery.html">Gallery</a></li>
+                  <li><a href="./pages/career.html">Careers</a></li>
+                  <li><a href="./pages/useful-links.html">Useful Links</a></li>
+                  <li><a href="./pages/training.html">Training</a></li>
+                  <li><a href="./pages/post.html">Academic</a></li>
+                  <li><a href="./pages/partnership.html">Partnerships</a></li>
+                </ul>
               </div>
               <div class="col-lg-6 py-3 py-lg-0 order-lg-1 order-0">
-                <div class="banner-middle h-100 px-4 pt-4">
-                  <img src="/assets/images/home/banner.jpg" class="w-100" alt="banner" />
+                <div class="banner-middle h-100 pt-4">
+                  <div class="banner-img-container">
+                    <img src="./assets/images/home/banner.jpg" class="w-100" alt="banner" />
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus rerum culpa consequatur tempore obcaecati eius impedit alias, cum eligendi quibusdam dolorum rem iure qui eum
+                    non quas dignissimos veritatis nesciunt!
+                  </p>
                   <div class="d-flex"><span>22 September 2023</span> <span>Event News</span></div>
                   <a class="d-flex pb-3" href="#">
                     <h4 class="text-white">Trade Diplomacy and International Trade Negotiation</h4>
@@ -56,7 +196,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Research</span>
@@ -69,44 +209,42 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -120,7 +258,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Training</span>
@@ -133,44 +271,42 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -184,7 +320,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="thumb-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="thumb-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Training</span>
@@ -197,44 +333,42 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -248,7 +382,7 @@
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Training</span>
@@ -261,44 +395,42 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -309,10 +441,34 @@
               <div class="common-title">
                 <h4>Academic</h4>
               </div>
+              <div class="home-card">
+                <img src="./assets/images/home/activities/activity-1.jpg" alt="activity-1" width="100%" />
+
+                <h5 class="my-3">Developing Export Competitiveness of Potential Halal products of Bangladesh’ Project Under COMCEC</h5>
+                <h5 class="mb-4 pb-lg-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ratione optio quo?</h5>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="common-title">
+                <h4>Innovative Business Support</h4>
+              </div>
+              <div class="home-card">
+                <img src="./assets/images/home/activities/activity-1.jpg" alt="activity-1" width="100%" />
+
+                <h5 class="my-3">Developing Export Competitiveness of Potential Halal products of Bangladesh’ Project Under COMCEC</h5>
+                <h5 class="mb-4 pb-lg-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos ratione optio quo?</h5>
+                <button>Read More</button>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="common-title">
+                <h4>News</h4>
+              </div>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Training</span>
@@ -325,44 +481,42 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -371,12 +525,12 @@
             </div>
             <div class="col-lg-6">
               <div class="common-title">
-                <h4>Innovative Business Support</h4>
+                <h4>BFTI Flagship Activities</h4>
               </div>
               <div class="row">
                 <div class="col-lg-6">
                   <div class="home-card">
-                    <img src="/assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
+                    <img src="./assets/images/home/pic-01.jpg" alt="pic-01" width="100%" />
                     <div class="d-flex py-3 flex-wrap">
                       <span class="my-1">20th October, 2023</span>
                       <span class="my-1">Training</span>
@@ -389,89 +543,44 @@
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="home-thumb">
                     <div class="row">
                       <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
+                        <img src="./assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
                       </div>
-                      <div class="col-8">
+                      <div class="col-8 d-flex flex-column">
                         <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
                         <span>22 July, 2023</span>
+                        <div class="py-2">
+                          <button>Read more</button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="home-thumb">
-                    <div class="row">
-                      <div class="col-4">
-                        <img src="/assets/images/home/thumbs/thumb-01.jpg" alt="thumb-01" width="100%" />
-                      </div>
-                      <div class="col-8">
-                        <h6 class="fs-md">Impacts of Padma Multipurpose Bridge on the Foreign Trade.</h6>
-                        <span>22 July, 2023</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-12">
-              <div class="common-title">
-                <h4>BFTI Flagship Activities</h4>
-              </div>
-              <div class="row">
-                <div class="col-lg-4 pb-3">
-                  <div class="home-card">
-                    <img src="/assets/images/home/activities/activity-1.jpg" alt="activity-1" width="100%" />
-                    <div class="d-flex py-3 flex-wrap">
-                      <span class="my-1">20th October, 2023</span>
-                      <span class="my-1">Training</span>
-                    </div>
-                    <h5 class="mb-3">Developing Export Competitiveness of Potential Halal products of Bangladesh’ Project Under COMCEC</h5>
-                    <p class="mb-4 pb-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque amet impedit voluptatem illo, sed error aperiam qui in eius? Saepe.</p>
-                    <button>Read More</button>
-                  </div>
-                </div>
-                <div class="col-lg-4 pb-3">
-                  <div class="home-card">
-                    <img src="/assets/images/home/activities/activity-1.jpg" alt="activity-1" width="100%" />
-                    <div class="d-flex py-3 flex-wrap">
-                      <span class="my-1">20th October, 2023</span>
-                      <span class="my-1">Training</span>
-                    </div>
-                    <h5 class="mb-3">Developing Export Competitiveness of Potential Halal products of Bangladesh’ Project Under COMCEC</h5>
-                    <p class="mb-4 pb-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque amet impedit voluptatem illo, sed error aperiam qui in eius? Saepe.</p>
-                    <button>Read More</button>
-                  </div>
-                </div>
-                <div class="col-lg-4 pb-3">
-                  <div class="home-card">
-                    <img src="/assets/images/home/activities/activity-1.jpg" alt="activity-1" width="100%" />
-                    <div class="d-flex py-3 flex-wrap">
-                      <span class="my-1">20th October, 2023</span>
-                      <span class="my-1">Training</span>
-                    </div>
-                    <h5 class="mb-3">Developing Export Competitiveness of Potential Halal products of Bangladesh’ Project Under COMCEC</h5>
-                    <p class="mb-4 pb-lg-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque amet impedit voluptatem illo, sed error aperiam qui in eius? Saepe.</p>
-                    <button>Read More</button>
                   </div>
                 </div>
               </div>
@@ -480,37 +589,37 @@
               <h4>We also work with</h4>
               <div class="d-flex flex-wrap justify-content-center align-items-center">
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner01.png" alt="partner01" />
+                  <img src="./assets/images/home/partners/partner01.png" alt="partner01" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner02.png" alt="partner02" />
+                  <img src="./assets/images/home/partners/partner02.png" alt="partner02" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner03.png" alt="partner03" />
+                  <img src="./assets/images/home/partners/partner03.png" alt="partner03" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner04.png" alt="partner04" />
+                  <img src="./assets/images/home/partners/partner04.png" alt="partner04" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner05.png" alt="partner05" />
+                  <img src="./assets/images/home/partners/partner05.png" alt="partner05" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner06.png" alt="partner06" />
+                  <img src="./assets/images/home/partners/partner06.png" alt="partner06" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner07.png" alt="partner07" />
+                  <img src="./assets/images/home/partners/partner07.png" alt="partner07" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner08.png" alt="partner08" />
+                  <img src="./assets/images/home/partners/partner08.png" alt="partner08" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner09.png" alt="partner09" />
+                  <img src="./assets/images/home/partners/partner09.png" alt="partner09" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner10.png" alt="partner10" />
+                  <img src="./assets/images/home/partners/partner10.png" alt="partner10" />
                 </div>
                 <div class="py-3 px-2">
-                  <img src="/assets/images/home/partners/partner11.png" alt="partner11" />
+                  <img src="./assets/images/home/partners/partner11.png" alt="partner11" />
                 </div>
               </div>
             </div>
@@ -518,14 +627,68 @@
         </div>
       </section>
       <!-- home end -->
-      <bfti-footer></bfti-footer>
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li>TCB Bhaban (5th Floor),</li>
+                  <li>1 Karwan Bazar, Dhaka-1215</li>
+                  <li>Phone: <a href="tel:+8802550134246">+88-02-55013424-6</a></li>
+                  <li>Fax: <a href="fax:+880255013427">+88-02-55013427</a></li>
+                  <li>E-mail: <a href="mailto:info@bfti.org.bd">info@bfti.org.bd</a></li>
+                  <li>Website: <a href="http://www.bfti.org.bd">www.bfti.org.bd</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Government of Bangladesh</a></li>
+                  <li><a href="#">Bangladesh Business Associations</a></li>
+                  <li><a href="./pages/useful-links.html">Useful Links</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>BFTI</h4>
+                <ul>
+                  <li>
+                    <a href="./pages/about-us.html">Who Are We</a>
+                  </li>
+                  <li><a href="./pages/contact.html">Contact us</a></li>
+                  <li><a href="./pages/career.html">Career</a></li>
+                  <li>
+                    <a href="#">Terms & Policies</a>
+                  </li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>Join our mailing list</h4>
+                <ul>
+                  <li>Subscribe to get our weekly newsletter</li>
+                  <li>delivered directly to your inbox</li>
+                  <li>
+                    <input type="text" class="form-control rounded-0" />
+                  </li>
+                  <li class="mt-3">
+                    <button class="btn btn-danger rounded-0">Subscribe Now</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="mb-0 text-center fs-md text-white">Copyright &copy; 2023 | Bangladesh Foreign Trade Institute (BFTI)</p>
+        </div>
+      </footer>
+      <!-- footer end -->
     </div>
 
-    <script src="/js/lib/bootstrap.bundle.min.js"></script>
-    <script src="/js/components/topbar.js"></script>
-    <script src="/js/components/navbar.js"></script>
-    <script src="/js/components/footer.js"></script>
-
-    <script src="/js/components/sidebar-shortcuts.js"></script>
+    <script src="./js/lib/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

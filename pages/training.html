@@ -4,243 +4,419 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Training</title>
-    <link rel="stylesheet" href="/css/lib/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="shortcut icon" href="/assets/images/fav-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./../css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../css/main.css" />
+    <link rel="shortcut icon" href="./../assets/images/fav-icon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="d-flex flex-column min-vh-100">
       <div>
-        <bfti-topbar></bfti-topbar>
-        <bfti-nav></bfti-nav>
+        <!-- topbar start -->
+        <div class="bfti-topbar">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center">
+                <span class="fs-md text-primary-dark fw-semibold">22 October 2023 | 12:36pm</span>
+              </div>
+              <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center ms-lg-5 justify-content-end justify-content-lg-start">
+                <span class="fs-md text-primary fw-semibold d-none d-sm-inline-block">Follow Us</span>
+                <a href="#" class="ms-2">
+                  <img src="./../assets/icons/facebook.svg" height="16" alt="facebook" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./../assets/icons/youtube-filled.svg" height="18" alt="youtube-filled" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./../assets/icons/twitter.svg" height="16" alt="twitter" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./../assets/icons/linkedin.svg" height="14" alt="linkedin" />
+                </a>
+                <a href="#" class="ms-2">
+                  <img src="./../assets/icons/user.svg" height="16" alt="user" />
+                </a>
+              </div>
+              <div class="col-lg-3 d-flex ps-lg-5">
+                <input type="text" class="form-control form-control-sm" name="search" />
+                <button class="btn btn-sm btn-primary ms-2">
+                  <img src="./../assets/icons/search-alt.svg" height="16" alt="search-alt" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- topbar end -->
+
+        <!-- navbar start -->
+        <nav class="bfti-navbar">
+          <div class="nav-brand">
+            <div class="container">
+              <div class="row py-4 align-items-center pe-0">
+                <div class="col-lg-2 col-md-3 text-center text-md-start">
+                  <a href="../index.html"><img src="./../assets/images/bfti-logo.png" height="71" alt="bfti-logo" /></a>
+                </div>
+                <div class="col-lg-10 col-md-9 row pe-0 align-items-center">
+                  <div class="col-xl-9 text-xl-center text-md-end text-center">
+                    <h2 class="mb-0">Bangladesh Foreign Trade Institute</h2>
+                  </div>
+                  <div class="col-xl-3 text-xl-start text-md-end text-center">
+                    <h5 class="fw-medium font-italic ms-xxl-2 mb-0">
+                      <span>BFTI Stands for Excellence in Trade and Economic Research</span>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navmenu-container">
+            <div class="container">
+              <div class="nav-toggle">
+                <a href="./../pages/about-us.html">About BFTI</a>
+                <button class="nav-toggler">
+                  <img src="./../assets/icons/burger-menu.svg" class="nav__open" alt="burger-menu" />
+                  <img src="./../assets/icons/close.svg" class="nav__close" alt="close" />
+                </button>
+              </div>
+              <div class="nav-menu">
+                <ul>
+                  <li class="nav-item"><a href="./../pages/about-us.html" class="d-none d-lg-block">About BFTI</a></li>
+                  <li class="nav-item">
+                    <a href="./../pages/research.html">Research </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./../pages/training.html">Training <img class="ms-2" src="./../assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+                    <ul>
+                      <li><a href="./../pages/training-details.html">Training detail page</a></li>
+                      <li><a href="#">menu 2</a></li>
+                      <li>
+                        <a href="#">menu 3</a>
+                        <ul>
+                          <li><a href="#">menu 3 submenu 1</a></li>
+                          <li><a href="#">menu 3 submenu 2</a></li>
+                          <li><a href="#">menu 3 submenu 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="./../pages/post.html">Academic</a></li>
+                  <li class="nav-item">
+                    <a href="./../pages/partnership.html">Partnerships <img class="ms-2" src="./../assets/icons/arrow-down.svg" alt="arrow-down" /></a>
+                    <ul>
+                      <li><a href="#">menu 1</a></li>
+                      <li>
+                        <a href="#">menu 2</a>
+                        <ul>
+                          <li><a href="#">menu 2 submenu 1</a></li>
+                          <li><a href="#">menu 2 submenu 2</a></li>
+                          <li><a href="#">menu 2 submenu 3</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">menu 3</a>
+                        <ul>
+                          <li><a href="#">menu 3 submenu 1</a></li>
+                          <li><a href="#">menu 3 submenu 2</a></li>
+                          <li><a href="#">menu 3 submenu 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a href="./../pages/events.html">Events & Activities</a></li>
+                  <li class="nav-item"><a href="./../pages/contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- navbar end -->
       </div>
       <!-- training part start -->
-      <section class="flex-grow-1">
+      <section id="training" class="flex-grow-1">
         <div class="container">
           <div class="training-body">
-            <div class="row">
-              <div class="col-lg-9">
-                <div class="common-title">
-                  <h4>Training</h4>
+            <div class="pagination-container pb-4">
+              <div class="training-banner">
+                <h1>Training</h1>
+              </div>
+              <h4 class="mt-4">Trainings</h4>
+              <div class="d-lg-flex justify-content-between">
+                <div class="d-flex">
+                  <div class="dropdown me-3">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Upcoming Training</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Training By Year</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="mt-3 mt-lg-0">
+                  <div class="d-flex align-items-center justify-content-end">
+                    <span class="me-2">Page:</span>
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link">
+                          <img src="./../assets/icons/arrow-left.svg" width="16" alt="arrow-left" />
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">
+                          <img src="./../assets/icons/arrow-right.svg" width="16" alt="arrow-right" />
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="training-card-container">
+              <div class="training-card">
                 <div class="row">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-1.jpg" alt="training-1" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
                   </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-2.jpg" alt="training-2" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-3.jpg" alt="training-3" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-3.jpg" alt="training-3" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-1.jpg" alt="training-1" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-2.jpg" alt="training-2" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card mb-lg-0">
-                      <img src="/assets/images/training/training-1.jpg" alt="training-1" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card mb-lg-0">
-                      <img src="/assets/images/training/training-3.jpg" alt="training-3" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card mb-lg-0">
-                      <img src="/assets/images/training/training-2.jpg" alt="training-2" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="open-badge">Open</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="common-title">
-                  <h4>Past Trainings</h4>
-                </div>
-                <div class="row">
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-1.jpg" alt="training-1" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="close-badge">Closed</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-2.jpg" alt="training-2" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="close-badge">Closed</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6">
-                    <div class="training-card">
-                      <img src="/assets/images/training/training-3.jpg" alt="training-3" />
-                      <a href="/pages/training-details.html"> Training Name Multipurpose Bridge on the Foreign Trade of Bangladesh </a>
-                      <p class="close-badge">Closed</p>
-                      <div class="mb-4 border-bottom"></div>
-                      <div class="d-flex mb-3">
-                        <img src="/assets/icons/date-range.svg" height="20" alt="date-range" />
-                        <h6 class="mb-0 ms-2">3rd October, 2023</h6>
-                      </div>
-                      <div class="d-flex">
-                        <img src="/assets/icons/location-pin.svg" height="20" alt="location-pin" />
-                        <h6 class="mb-0 ms-2">BFTI Auditorium, Dhaka</h6>
-                      </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
-                <bfti-sidebar-cats></bfti-sidebar-cats>
-                <bfti-sidebar-shorts></bfti-sidebar-shorts>
-                <bfti-sidebar-about></bfti-sidebar-about>
+              <div class="training-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-2.jpg" alt="pic-1" class="w-100" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-2.jpg" alt="pic-1" class="w-100" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="training-card">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="./../assets/images/research/pic-2.jpg" alt="pic-1" class="w-100" />
+                  </div>
+                  <div class="col-md-8 d-flex flex-column">
+                    <div>
+                      <p class="d-flex flex-wrap mb-1 py-2 py-md-0 mb-4 fs-md">
+                        <span class="my-1 text-danger me-2">Organized by:</span>
+                        <span class="my-1">BFTI & Tottho Apa</span>
+                      </p>
+                      <h4>Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</h4>
+                    </div>
+                    <div class="d-flex flex-wrap">
+                      <p class="d-flex align-items-center mb-0 me-3">
+                        <img src="./../assets/icons/calendar.svg" alt="calendar" height="18" width="18" /><span class="ms-2">25-29 November, 2023</span>
+                      </p>
+                      <p class="d-flex align-items-center mb-0">
+                        <img src="./../assets/icons/location-pin.svg" alt="location-pin" height="18" width="18" /><span class="ms-2">BFTI Auditorium, Dhaka</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination-container border-0 mt-0 mb-5">
+              <div class="mt-3 mt-sm-0">
+                <div class="d-flex align-items-center justify-content-end">
+                  <span class="me-2">Page:</span>
+                  <ul class="pagination">
+                    <li class="page-item disabled">
+                      <a class="page-link">
+                        <img src="./../assets/icons/arrow-left.svg" width="16" alt="arrow-left" />
+                      </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">
+                        <img src="./../assets/icons/arrow-right.svg" width="16" alt="arrow-right" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <!-- training part end -->
-      <bfti-footer></bfti-footer>
+      <!-- footer start -->
+      <footer class="footer">
+        <div class="footer-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <h4>Contact Us</h4>
+                <ul>
+                  <li>TCB Bhaban (5th Floor),</li>
+                  <li>1 Karwan Bazar, Dhaka-1215</li>
+                  <li>Phone: <a href="tel:+8802550134246">+88-02-55013424-6</a></li>
+                  <li>Fax: <a href="fax:+880255013427">+88-02-55013427</a></li>
+                  <li>E-mail: <a href="mailto:info@bfti.org.bd">info@bfti.org.bd</a></li>
+                  <li>Website: <a href="http://www.bfti.org.bd">www.bfti.org.bd</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>Resources</h4>
+                <ul>
+                  <li><a href="#">Government of Bangladesh</a></li>
+                  <li><a href="#">Bangladesh Business Associations</a></li>
+                  <li><a href="./../pages/useful-links.html">Useful Links</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>BFTI</h4>
+                <ul>
+                  <li>
+                    <a href="./../pages/about-us.html">Who Are We</a>
+                  </li>
+                  <li><a href="./../pages/contact.html">Contact us</a></li>
+                  <li><a href="./../pages/career.html">Career</a></li>
+                  <li>
+                    <a href="#">Terms & Policies</a>
+                  </li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <h4>Join our mailing list</h4>
+                <ul>
+                  <li>Subscribe to get our weekly newsletter</li>
+                  <li>delivered directly to your inbox</li>
+                  <li>
+                    <input type="text" class="form-control rounded-0" />
+                  </li>
+                  <li class="mt-3">
+                    <button class="btn btn-danger rounded-0">Subscribe Now</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="mb-0 text-center fs-md text-white">Copyright &copy; 2023 | Bangladesh Foreign Trade Institute (BFTI)</p>
+        </div>
+      </footer>
+      <!-- footer end -->
     </div>
-    <script src="/js/lib/bootstrap.bundle.min.js"></script>
-    <script src="/js/components/topbar.js"></script>
-    <script src="/js/components/navbar.js"></script>
-    <script src="/js/components/footer.js"></script>
-    <script src="/js/components/sidebar-cats.js"></script>
-    <script src="/js/components/sidebar-shortcuts.js"></script>
-    <script src="/js/components/sidebar-about.js"></script>
+    <script src="./../js/lib/bootstrap.bundle.min.js"></script>
+    <script src="./../js/script.js"></script>
   </body>
 </html>

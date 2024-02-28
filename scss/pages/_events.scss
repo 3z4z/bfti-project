@@ -1,13 +1,22 @@
 #events {
   margin-bottom: 3rem;
   .event-banner {
-    background-image: url(../../assets/images/events/event-main-banner.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 9.5rem 0;
-    text-align: center;
-    color: $white;
+    position: relative;
+    z-index: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      position: absolute;
+    }
+    h1 {
+      padding: 9.5rem 0;
+      text-align: center;
+      color: $white;
+    }
   }
 
   .pagination-container {
@@ -23,12 +32,7 @@
         > span {
           font-family: $poppins-medium;
           font-size: 0.875rem;
-          &:first-child {
-            font-size: 0.7rem;
-            padding: 0.15rem 1.25rem;
-            background-color: $primary;
-            color: $white;
-          }
+
           &.event-organizer {
             span {
               &:first-child {

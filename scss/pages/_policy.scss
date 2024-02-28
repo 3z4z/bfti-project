@@ -1,0 +1,23 @@
+.policy-container {
+  margin: 3rem 0;
+  .policy-card {
+    padding: 2rem 0;
+    border-top: 1px solid $border-color;
+    p {
+      &:first-child {
+        span {
+          margin-right: 0.5rem;
+          font-size: 0.875rem;
+          font-family: $poppins-medium;
+          &:first-child {
+            color: $amber-red;
+          }
+        }
+      }
+    }
+    h2 {
+      margin-bottom: 1.5rem;
+      color: $body-heading-color;
+    }
+  }
+}
