@@ -2,6 +2,7 @@
 .sidebar-about {
   li {
     margin-bottom: 1.55rem;
+
     a {
       color: $body-heading-color;
       font-family: $poppins-semibold;
@@ -15,20 +16,28 @@
   background-color: $primary;
   border-radius: 0.75rem;
   padding: 1.5rem 2.5rem 1.5rem 0;
+
   h4 {
-    margin: 0.75rem 0 1.25rem;
+    margin: 0.75rem 0 1.75rem;
     padding-left: 1.25rem;
     color: $white;
   }
+
   li {
-    margin: 0.25rem 0;
+    margin: 0.125rem 0;
     width: 100%;
     padding: 0.52rem 0 0.52rem 1.25rem;
     position: relative;
+
+    @media screen and (min-width:1600px) {
+      margin: 0.25rem 0;
+    }
+
     a {
       font-family: $poppins-regular;
       color: $white;
     }
+
     &::after {
       content: '';
       position: absolute;
@@ -41,11 +50,14 @@
       border-left: 0 solid rgba($white, 0.35);
       border-bottom: 8px solid transparent;
     }
+
     &:hover {
       background-color: $primary-dark;
+
       a {
         color: $primary-light;
       }
+
       &::after {
         border-left: 8px solid rgba($white, 0.35);
       }
@@ -56,6 +68,11 @@
 .sidebar-cats {
   border-radius: 0.5rem;
   margin-top: 6rem;
+
+  @media screen and (max-width:991px) {
+    margin-top: 1rem;
+  }
+
   li {
     margin: 1rem 0;
   }
@@ -64,26 +81,32 @@
 .sidebar-directors {
   margin-top: 3rem;
   margin-bottom: 3rem;
+
   .director-thumb {
     height: 100%;
     border-radius: 0.5rem;
     background-color: $primary-light;
     padding: 0.75rem;
   }
+
   .w-35 {
     width: 35%;
     padding-right: 1rem;
+
     img {
       border: 1px solid $primary-light-3;
     }
   }
+
   .w-65 {
     width: 65%;
+
     small {
-      color: $primary;
+      color: $primary-light-4;
       font-family: $poppins-medium;
       font-size: 0.625rem;
     }
+
     p {
       margin-bottom: 0;
       font-family: $poppins-semibold;
@@ -91,6 +114,7 @@
       font-size: 0.75rem;
     }
   }
+
   .director-thumb-info {
     margin-top: 1rem;
     margin-bottom: 0.25rem;
@@ -98,6 +122,7 @@
     font-family: $poppins-medium;
     color: $body-heading-color;
   }
+
   @media screen and (min-width: 991px) {
     margin-top: 6rem;
   }
@@ -108,23 +133,29 @@
   padding: 1.25rem 3rem 1.25rem 0;
   border: 1px solid $primary;
   border-radius: 0.5rem;
+
   li {
     position: relative;
     margin-bottom: 1.15rem;
     width: 100%;
     padding: 0.52rem 0 0.52rem 1.25rem;
+
     a {
       color: $body-color;
     }
+
     &:hover {
       background-color: $primary;
+
       a {
         color: $white;
       }
+
       &::after {
         border-left: 8px solid $white;
       }
     }
+
     &:after {
       content: '';
       position: absolute;
@@ -138,6 +169,7 @@
       border-bottom: 8px solid transparent;
       // transition: all linear 0.15s;
     }
+
     &:last-child {
       margin-bottom: 0;
     }

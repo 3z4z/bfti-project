@@ -1,5 +1,6 @@
 @import '../scss/custom/fonts';
 @import '../scss/custom/colors';
+@import '../scss/custom/spacings';
 
 @import '../scss/components/topbar';
 @import '../scss/components/navbar';
@@ -32,6 +33,10 @@ body {
   font-family: $poppins-regular;
   font-size: 0.9375rem;
   color: $body-color;
+
+  @media screen and (max-width: 1600px) {
+    font-size: 0.875rem;
+  }
 }
 
 ul,
@@ -41,10 +46,12 @@ ol {
   margin: 0;
   padding: 0;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   &::after,
   &::before,
   &:hover {
@@ -59,6 +66,16 @@ a {
 
 h2 {
   font-size: 1.9375rem;
+
+  @media screen and (max-width: 1600px) {
+    font-size: 1.75rem;
+  }
+}
+
+h5 {
+  @media screen and (max-width: 1600px) {
+    font-size: 1.235rem;
+  }
 }
 
 h1,
@@ -73,6 +90,7 @@ h6 {
 .common-title-lg {
   border-bottom: 1px solid $border-color;
   margin: 3.2rem 0 2.75rem;
+
   h2 {
     font-size: 2rem;
     position: relative;
@@ -80,6 +98,11 @@ h6 {
     padding-bottom: 1rem;
     margin-bottom: 0;
     color: $body-heading-color;
+
+    @media screen and (max-width:1600px) {
+      font-size: 1.75rem;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -95,12 +118,14 @@ h6 {
 .common-title {
   border-bottom: 1px solid $border-color;
   margin: 3.75rem 0 2.75rem;
+
   h4 {
     position: relative;
     display: inline-block;
     padding-bottom: 1rem;
     margin-bottom: 0;
     color: $body-heading-color;
+
     &::after {
       content: '';
       position: absolute;
@@ -115,6 +140,7 @@ h6 {
 
 .breadcrumb {
   margin: 2rem 0;
+
   a,
   span {
     font-size: 0.875rem;
@@ -137,12 +163,14 @@ h6 {
   position: relative;
   padding: 1.5rem 3rem;
   border: 2px solid $danger;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   margin: 3rem 0;
+
   h5 {
     color: $body-heading-color;
     margin-left: 0.75rem;
   }
+
   .mini-status {
     position: absolute;
     top: -18px;
@@ -150,7 +178,7 @@ h6 {
     transform: translateX(-50%);
     background-color: $primary;
     color: $white;
-    border-radius: 0.5rem;
+    border-radius: 0.35rem;
     padding: 0.25rem 1.5rem;
     font-size: 0.915rem;
   }
@@ -160,31 +188,38 @@ h6 {
 .event-detail-text,
 .career-detail-text {
   font-size: 0.9375rem;
+
   p {
     margin-bottom: 2rem;
+
     span {
       font-family: $poppins-extrabold;
     }
+
     &:last-child {
       margin-bottom: 0;
     }
   }
+
   ul {
     li {
       img {
         margin-right: 0.5rem;
       }
+
       font-family: $poppins-semibold;
       margin-bottom: 1rem;
     }
   }
+
   button {
     margin-bottom: 1rem;
     border: none;
     padding: 0.45rem 1.5rem;
     background-color: $danger;
     color: $white;
-    border-radius: 0.25rem;
+    border-radius: 0.35rem;
+
     &.btn-success {
       background-color: $primary !important;
     }
@@ -192,21 +227,33 @@ h6 {
 }
 
 .container {
+  @media screen and (min-width: 1200px) {
+    max-width: 1100px;
+  }
+
   @media screen and (min-width: 1400px) {
+    max-width: 1070px;
+  }
+
+  @media screen and (min-width: 1600px) {
     max-width: 1170px;
   }
 }
+
 .pagination-container {
   margin-top: 3.75rem;
+
   h4 {
     color: $body-heading-color;
     margin-bottom: 2rem;
   }
+
   button {
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
     background-color: $primary;
     color: $white;
+
     &::after {
       margin-left: 0.75rem;
       border-top-width: 0.5rem;
@@ -214,34 +261,41 @@ h6 {
       border-left-width: 0.5rem;
       vertical-align: 0.1rem;
     }
+
     &:hover,
     &:focus,
     &:active {
       background-color: $primary-dark !important;
       color: $white !important;
+
       &::after {
         border-top-color: $white !important;
       }
     }
   }
+
   .pagination {
     .page-item {
+
       &:first-child,
       &:last-child {
         .page-link {
           padding-left: 0.35rem;
           padding-right: 0.35rem;
           background-color: transparent;
+
           &:hover {
             background-color: $primary-light;
           }
         }
       }
+
       &.disabled {
         .page-link {
           background-color: transparent;
         }
       }
+
       &.active {
         .page-link {
           pointer-events: none;
@@ -250,6 +304,7 @@ h6 {
         }
       }
     }
+
     .page-link {
       margin: 0 0.375rem;
       background-color: $primary-light;
@@ -258,6 +313,7 @@ h6 {
       padding-right: 0.85rem;
       border: none;
       color: $body-color;
+
       &:hover {
         background-color: $primary-light-2;
       }
@@ -270,6 +326,7 @@ h6 {
   margin-top: 2.5rem;
   position: relative;
   z-index: 0;
+
   img {
     width: 100%;
     height: 100%;
@@ -279,6 +336,7 @@ h6 {
     left: 0;
     position: absolute;
   }
+
   h1 {
     margin-bottom: 0;
     padding: 9.5rem 0;
@@ -287,41 +345,54 @@ h6 {
   }
 }
 
+.row {
+  --bs-gutter-x: 1.875rem;
+}
+
 .trade-data-card,
 .useful-link-card {
   padding: 2.5rem 0;
   border-bottom: 1px solid $border-color;
+
   &:first-child {
     padding-top: 0;
   }
+
   &:last-child {
     border-bottom: none;
   }
+
   .row {
     .col-lg-4 {
+
       .trade-data-img,
       .useful-link-img {
         padding: 1.5rem 0;
         box-shadow: 0 2px 5px rgba($primary-dark, 0.25);
         border-radius: 1rem;
         text-align: center;
+
         img {
           height: 120px;
           object-fit: contain;
         }
       }
     }
+
     .col-lg-8 {
       display: flex;
       flex-direction: column;
+
       h4 {
         font-size: 1.5625rem;
       }
+
       a {
         margin-bottom: 2.25rem;
         color: $primary;
         font-size: 1.1875rem;
       }
+
       button {
         background-color: $primary-dark;
         color: $white;
@@ -341,18 +412,22 @@ h6 {
   background-color: $primary-light;
   padding: 1.75rem 1.25rem;
   border-radius: 0.75rem;
+
   span {
     margin: 0.75rem 0;
     font-family: $poppins-medium;
     color: $primary-2;
   }
+
   h5,
   p {
     color: $body-heading-color;
   }
+
   h5 {
     margin-bottom: 1.5rem;
   }
+
   p {
     font-family: $poppins-semibold;
     margin-bottom: 0;

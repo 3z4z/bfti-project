@@ -3,17 +3,24 @@
     font-size: 1.125rem;
     color: $body-heading-color;
     font-family: $poppins-semibold;
-    margin-bottom: 1rem;
+    margin: 0.7rem 0 1rem;
+
+    @media screen and (max-width: 1600px) {
+      font-size: 1rem;
+    }
   }
+
   p {
     padding-left: 0.5rem;
     color: $white;
     font-family: $poppins-medium;
+
     &.open-badge {
       background-image: url(../../bfti-project/assets/images/training/badge.png);
       background-repeat: no-repeat;
       background-size: contain;
     }
+
     &.close-badge {
       background-image: url(../../bfti-project/assets/images/training/close-badge.png);
       background-repeat: no-repeat;

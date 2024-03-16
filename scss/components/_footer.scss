@@ -1,24 +1,43 @@
 .footer {
   a {
     color: $white;
+
     &:hover {
       color: $primary-light;
     }
   }
+
   .footer-body {
     background-color: $primary;
     color: $white;
     padding-bottom: 2.75rem;
+
     h4 {
       margin-top: 2.75rem;
       margin-bottom: 2rem;
     }
+
     ul {
-      > li {
+      >li {
         margin-bottom: 0.75rem;
+        font-size: 0.875rem;
+
+        @media screen and (max-width: 991px) {
+          font-size: 0.8125rem;
+        }
+
+        button {
+          padding: 0.25rem 1rem;
+          font-size: 0.875rem;
+
+          @media screen and (max-width: 991px) {
+            font-size: 0.8125rem;
+          }
+        }
       }
     }
   }
+
   .copyright {
     padding: 2rem 0;
     background-color: $primary-dark;

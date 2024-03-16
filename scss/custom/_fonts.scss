@@ -34,22 +34,30 @@ $poppins-mediumItalic: 'poppins-mediumItalic';
 // font classes
 .fs-md {
   font-size: 0.875rem !important;
+
+  @media screen and (max-width: 1600px) {
+    font-size: 0.8125rem !important;
+  }
 }
 
 .fw-semibold {
-  font-family: 'poppins-semibold' !important;
+  font-family: $poppins-semibold !important;
 }
 
 .fw-medium {
   &.font-italic {
-    font-family: $poppins-mediumItalic;
+    font-family: $poppins-mediumItalic !important;
   }
 }
 
 .fw-medium {
-  font-family: 'poppins-medium' !important;
+  font-family: $poppins-medium !important;
 }
 
 .fs-sm {
   font-size: 0.7rem !important;
+
+  @media screen and (max-widtH: 1600px) {
+    font-size: 0.6375rem !important;
+  }
 }

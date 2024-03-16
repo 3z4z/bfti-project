@@ -1,12 +1,6 @@
-#directors {
-  bfti-sidebar-shorts {
-    .sidebar-shortcuts {
-      margin-top: 6rem;
-    }
-  }
-}
 .director-container,
 .team-container {
+
   .director-card,
   .team-card {
     margin-bottom: 0rem;
@@ -16,15 +10,18 @@
     text-align: center;
     align-items: center;
     border-bottom: 1px solid $border-color;
+
     .director-img,
     .team-img {
       position: relative;
       padding: 2rem;
       z-index: 0;
+
       img {
         // ENABLE THIS IF IMAGE HAS NO BORDER
         // border: 1px solid $primary;
       }
+
       &::after {
         position: absolute;
         content: '';
@@ -36,39 +33,49 @@
         z-index: -1;
       }
     }
+
     @media screen and (min-width: 576px) {
       flex-direction: row;
       text-align: left;
     }
+
     .director-detail,
     .team-detail {
       padding: 2rem 0;
+
       p {
         margin-bottom: 0;
         font-size: 0.9375rem;
+
         &.director-designation,
         &.team-designation {
           font-family: $poppins-medium;
           color: $primary-light-4;
         }
+
         &.director-info,
         &.team-info {
           color: $body-heading-color;
+          font-family: $poppins-medium;
+
           a {
             color: $body-heading-color;
           }
         }
       }
+
       h3 {
         font-size: 1.625rem;
         color: $body-heading-color;
         margin: 0.5rem 0 2rem;
       }
+
       @media screen and (min-width: 576px) {
         padding: 0 0 0 2rem;
       }
     }
   }
+
   @media screen and (min-width: 991px) {
     padding-bottom: 5rem;
   }

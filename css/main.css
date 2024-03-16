@@ -21,13 +21,18 @@
 .fs-md {
   font-size: 0.875rem !important;
 }
+@media screen and (max-width: 1600px) {
+  .fs-md {
+    font-size: 0.8125rem !important;
+  }
+}
 
 .fw-semibold {
   font-family: "poppins-semibold" !important;
 }
 
 .fw-medium.font-italic {
-  font-family: "poppins-mediumItalic";
+  font-family: "poppins-mediumItalic" !important;
 }
 
 .fw-medium {
@@ -36,6 +41,11 @@
 
 .fs-sm {
   font-size: 0.7rem !important;
+}
+@media screen and (max-widtH: 1600px) {
+  .fs-sm {
+    font-size: 0.6375rem !important;
+  }
 }
 
 .text-primary {
@@ -52,6 +62,19 @@
 
 .text-danger {
   color: #e9082e !important;
+}
+
+@media screen and (min-width: 1600px) {
+  .ps-xxxl-5 {
+    padding-right: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .py-xxxl-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
 }
 
 .bfti-topbar {
@@ -210,6 +233,21 @@
 }
 .footer .footer-body ul > li {
   margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 991px) {
+  .footer .footer-body ul > li {
+    font-size: 0.8125rem;
+  }
+}
+.footer .footer-body ul > li button {
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+}
+@media screen and (max-width: 991px) {
+  .footer .footer-body ul > li button {
+    font-size: 0.8125rem;
+  }
 }
 .footer .copyright {
   padding: 2rem 0;
@@ -235,16 +273,22 @@
 }
 .sidebar-cats h4,
 .sidebar-shortcuts h4 {
-  margin: 0.75rem 0 1.25rem;
+  margin: 0.75rem 0 1.75rem;
   padding-left: 1.25rem;
   color: #fff;
 }
 .sidebar-cats li,
 .sidebar-shortcuts li {
-  margin: 0.25rem 0;
+  margin: 0.125rem 0;
   width: 100%;
   padding: 0.52rem 0 0.52rem 1.25rem;
   position: relative;
+}
+@media screen and (min-width: 1600px) {
+  .sidebar-cats li,
+  .sidebar-shortcuts li {
+    margin: 0.25rem 0;
+  }
 }
 .sidebar-cats li a,
 .sidebar-shortcuts li a {
@@ -281,6 +325,11 @@
   border-radius: 0.5rem;
   margin-top: 6rem;
 }
+@media screen and (max-width: 991px) {
+  .sidebar-cats {
+    margin-top: 1rem;
+  }
+}
 .sidebar-cats li {
   margin: 1rem 0;
 }
@@ -306,7 +355,7 @@
   width: 65%;
 }
 .sidebar-directors .w-65 small {
-  color: #006d2c;
+  color: #00a643;
   font-family: "poppins-medium";
   font-size: 0.625rem;
 }
@@ -538,10 +587,10 @@
 #home .banner .banner-middle > p {
   padding: 0.75rem 1rem;
   font-size: 0.75rem;
-  background-color: #00531d;
+  background-color: #05441e;
   color: #fff;
   margin-bottom: 0;
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 #home .banner .banner-middle > div.d-flex {
   align-items: center;
@@ -576,12 +625,12 @@
   padding: 1rem 0.75rem 0.75rem;
   height: 100%;
 }
-#home .banner .bfti-updates .update-card-container {
-  max-height: 64vh;
-  overflow-y: auto;
+#home .banner .bfti-updates h4 {
+  color: #00531d;
 }
-#home .banner .bfti-updates .update-card-container h4 {
-  color: #006d2c;
+#home .banner .bfti-updates .update-card-container {
+  overflow-y: auto;
+  max-height: 69vh;
 }
 #home .banner .bfti-updates .update-card-container .update-card {
   margin-bottom: 0.5rem;
@@ -590,37 +639,29 @@
   border: 1px solid #7ac696;
   border-left-width: 6px;
   background-color: #fff;
+  color: #132656;
 }
 #home .banner .bfti-updates .update-card-container .update-card:last-child {
   margin-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  #home .banner .bfti-updates .update-card-container {
-    max-height: 62vh;
-  }
-}
-@media screen and (min-width: 1400px) {
-  #home .banner .bfti-updates .update-card-container {
-    max-height: 53vh;
-  }
-}
-@media screen and (min-width: 1600px) {
-  #home .banner .bfti-updates .update-card-container {
-    max-height: 51vh;
-  }
-}
-@media screen and (min-width: 1800px) {
-  #home .banner .bfti-updates .update-card-container {
-    max-height: 44vh;
-  }
 }
 @media screen and (min-width: 991px) {
   #home .banner {
     padding: 1rem 0 3rem;
   }
 }
+#home .common-title {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+}
 #home .common-title h4 {
   color: #132656;
+}
+#home .common-title h4::after {
+  background-color: #00a643;
+}
+#home .scrolling-news span {
+  font-family: "poppins-semibold";
+  color: #A13D3D;
 }
 #home .home-card {
   margin-bottom: 1.5rem;
@@ -628,8 +669,9 @@
 #home .home-card .d-flex span {
   color: #fff;
   font-family: "poppins-medium";
-  padding: 0.15rem 1rem;
+  padding: 0.075rem 0.75rem;
   font-size: 0.8125rem;
+  border-radius: 3px;
 }
 #home .home-card .d-flex span:first-child {
   background-color: #006d2c;
@@ -907,10 +949,6 @@
   }
 }
 
-#directors bfti-sidebar-shorts .sidebar-shortcuts {
-  margin-top: 6rem;
-}
-
 .director-container .director-card,
 .director-container .team-card,
 .team-container .director-card,
@@ -1016,6 +1054,7 @@
 .team-container .team-card .team-detail p.director-info,
 .team-container .team-card .team-detail p.team-info {
   color: #132656;
+  font-family: "poppins-medium";
 }
 .director-container .director-card .director-detail p.director-info a, .director-container .director-card .director-detail p.team-info a,
 .director-container .director-card .team-detail p.director-info a,
@@ -1217,7 +1256,12 @@
   font-size: 1.125rem;
   color: #132656;
   font-family: "poppins-semibold";
-  margin-bottom: 1rem;
+  margin: 0.7rem 0 1rem;
+}
+@media screen and (max-width: 1600px) {
+  .related-event-card a {
+    font-size: 1rem;
+  }
 }
 .related-event-card p {
   padding-left: 0.5rem;
@@ -1282,7 +1326,7 @@
 @media screen and (min-width: 991px) {
   #about-us .special-about {
     margin: 4.5rem 0;
-    padding: 4rem;
+    padding: 4rem 1.5rem;
   }
   #about-us .special-about .special-about-text {
     font-size: 1.375rem;
@@ -1560,6 +1604,11 @@ body {
   font-size: 0.9375rem;
   color: #1b1b22;
 }
+@media screen and (max-width: 1600px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
 
 ul,
 dl,
@@ -1586,6 +1635,17 @@ a {
 h2 {
   font-size: 1.9375rem;
 }
+@media screen and (max-width: 1600px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  h5 {
+    font-size: 1.235rem;
+  }
+}
 
 h1,
 h2,
@@ -1607,6 +1667,11 @@ h6 {
   padding-bottom: 1rem;
   margin-bottom: 0;
   color: #132656;
+}
+@media screen and (max-width: 1600px) {
+  .common-title-lg h2 {
+    font-size: 1.75rem;
+  }
 }
 .common-title-lg h2::after {
   content: "";
@@ -1661,7 +1726,7 @@ h6 {
   position: relative;
   padding: 1.5rem 3rem;
   border: 2px solid #cc0000;
-  border-radius: 1rem;
+  border-radius: 0.75rem;
   margin: 3rem 0;
 }
 .training-status h5,
@@ -1677,7 +1742,7 @@ h6 {
   transform: translateX(-50%);
   background-color: #006d2c;
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 0.35rem;
   padding: 0.25rem 1.5rem;
   font-size: 0.915rem;
 }
@@ -1721,7 +1786,7 @@ h6 {
   padding: 0.45rem 1.5rem;
   background-color: #cc0000;
   color: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
 }
 .training-detail-text button.btn-success,
 .event-detail-text button.btn-success,
@@ -1729,7 +1794,17 @@ h6 {
   background-color: #006d2c !important;
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
 @media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1070px;
+  }
+}
+@media screen and (min-width: 1600px) {
   .container {
     max-width: 1170px;
   }
@@ -1814,6 +1889,10 @@ h6 {
   padding: 9.5rem 0;
   text-align: center;
   color: #fff;
+}
+
+.row {
+  --bs-gutter-x: 1.875rem;
 }
 
 .trade-data-card,
