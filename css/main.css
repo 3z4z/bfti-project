@@ -48,6 +48,10 @@
   }
 }
 
+.form-control {
+  font-size: inherit;
+}
+
 .text-primary {
   color: #006d2c !important;
 }
@@ -79,7 +83,7 @@
 
 .bfti-topbar {
   background-color: #d4e6db;
-  padding: 0.25rem 0;
+  padding: 0.125rem 0;
 }
 
 .bfti-navbar .navmenu-container {
@@ -158,6 +162,11 @@
   }
   .bfti-navbar .navmenu-container .container .nav-menu ul .nav-item:hover::after {
     border-top-width: 7px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bfti-navbar .bfti-slogan {
+    font-size: 1rem;
   }
 }
 
@@ -273,15 +282,15 @@
 }
 .sidebar-cats h4,
 .sidebar-shortcuts h4 {
-  margin: 0.75rem 0 1.75rem;
-  padding-left: 1.25rem;
+  margin: 0.5rem 0 1.25rem;
+  padding-left: 1.5rem;
   color: #fff;
 }
 .sidebar-cats li,
 .sidebar-shortcuts li {
   margin: 0.125rem 0;
   width: 100%;
-  padding: 0.52rem 0 0.52rem 1.25rem;
+  padding: 0.52rem 0 0.52rem 1.5rem;
   position: relative;
 }
 @media screen and (min-width: 1600px) {
@@ -442,6 +451,10 @@
   border-color: #af0d0d;
 }
 
+.dropdown-toggle {
+  font-size: 0.875rem;
+}
+
 .accordion .accordion-item {
   margin-bottom: 1rem;
   border-color: transparent;
@@ -545,7 +558,7 @@
   font-size: 1.125rem;
   color: #132656;
   font-family: "poppins-semibold";
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 #training-details .related-training-card p {
   padding-left: 0.5rem;
@@ -583,6 +596,9 @@
 }
 #home .banner .banner-middle {
   background-color: #006d2c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #home .banner .banner-middle > p {
   padding: 0.75rem 1rem;
@@ -592,16 +608,16 @@
   margin-bottom: 0;
   margin-top: 1rem;
 }
-#home .banner .banner-middle > div.d-flex {
+#home .banner .banner-middle .banner-event-date {
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 1rem 0.35rem;
 }
-#home .banner .banner-middle > div.d-flex span {
+#home .banner .banner-middle .banner-event-date span {
   font-size: 0.75rem;
   font-family: "poppins-medium";
   color: #fff;
 }
-#home .banner .banner-middle > div.d-flex span:last-child {
+#home .banner .banner-middle .banner-event-date span:last-child {
   margin-left: 1rem;
   padding: 0.15rem 1rem;
   background-color: #cc0000;
@@ -670,12 +686,12 @@
   color: #fff;
   font-family: "poppins-medium";
   padding: 0.075rem 0.75rem;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   border-radius: 3px;
 }
 #home .home-card .d-flex span:first-child {
   background-color: #006d2c;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 #home .home-card .d-flex span:last-child {
   background-color: #cc0000;
@@ -821,6 +837,21 @@
 
 .post-title h1 {
   color: #132656;
+}
+@media screen and (max-width: 1200px) {
+  .post-title h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .post-title h1 {
+    font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .post-title h1 {
+    font-size: 1.25rem;
+  }
 }
 .post-title div {
   padding: 1.5rem 0 2.5rem;
@@ -1081,7 +1112,6 @@
 .team-container .director-card .team-detail h3,
 .team-container .team-card .director-detail h3,
 .team-container .team-card .team-detail h3 {
-  font-size: 1.625rem;
   color: #132656;
   margin: 0.5rem 0 2rem;
 }
@@ -1224,21 +1254,27 @@
   font-family: "poppins-medium";
   font-size: 0.875rem;
 }
+#events .events-container .event-card .event-category > span.event-organizer {
+  color: #132656;
+}
 #events .events-container .event-card .event-category > span.event-organizer span:first-child {
   margin-right: 0.5rem;
   color: #e9082e;
 }
-#events .events-container .event-card h3 {
-  font-size: 1.75rem;
+#events .events-container .event-card h4 {
   color: #132656;
 }
 #events .events-container .event-card .event-detail p {
   display: flex;
   align-items: center;
   margin-right: 1rem;
-  font-size: 1rem;
   font-family: "poppins-semibold";
   color: #132656;
+}
+@media screen and (min-width: 1200px) {
+  #events .events-container .event-card .event-detail p {
+    font-size: 1rem;
+  }
 }
 #events .events-container .event-card .event-detail p img {
   margin-right: 0.5rem;
@@ -1293,7 +1329,7 @@
   margin-bottom: 0;
   padding-top: 2rem;
   color: #fff;
-  font-size: 1.125rem;
+  font-size: 1.175rem;
 }
 #about-us .special-about .special-about-text:after {
   content: "";
@@ -1329,7 +1365,7 @@
     padding: 4rem 1.5rem;
   }
   #about-us .special-about .special-about-text {
-    font-size: 1.375rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1410,8 +1446,10 @@
 #contact .contact-form textarea {
   margin-bottom: 1rem;
   border-radius: 0.15rem;
+  font-size: 0.875rem;
 }
 #contact .contact-form button {
+  font-size: 0.875rem;
   margin-top: 0.75rem;
   background-color: #cc0000;
   color: #fff;
@@ -1446,13 +1484,11 @@
   font-size: 0.75rem;
 }
 #career .circular-card-container .circular-card a {
-  padding: 0.25rem 1.25rem;
-  border-radius: 0.125rem;
+  margin-top: 0.25rem;
+  padding: 0.25rem 2.25rem;
+  border-radius: 0.25rem;
   border: none;
   color: #fff;
-  background-color: #00531d;
-}
-#career .circular-card-container .circular-card a:hover {
   background-color: #003f14;
 }
 #career .circular-card-container .circular-card:last-child {
@@ -1494,6 +1530,11 @@
   padding: 0.75rem 1.25rem;
   border-radius: 0.25rem;
 }
+@media screen and (min-width: 991px) {
+  .connect-form input.email {
+    width: 75%;
+  }
+}
 .connect-form button {
   background-color: #cc0000;
   color: #fff;
@@ -1522,16 +1563,29 @@
   padding: 2rem 0;
   border-top: 1px solid #47567b;
 }
+.policy-container .policy-card p {
+  font-size: 0.815rem;
+}
 .policy-container .policy-card p:first-child span {
   margin-right: 0.5rem;
-  font-size: 0.875rem;
   font-family: "poppins-medium";
 }
 .policy-container .policy-card p:first-child span:first-child {
   color: #e9082e;
 }
+.policy-container .policy-card p:first-child span:last-child {
+  color: #132656;
+}
 .policy-container .policy-card h2 {
   margin-bottom: 1.5rem;
+  color: #132656;
+}
+@media screen and (max-width: 768px) {
+  .policy-container .policy-card h2 {
+    font-size: calc(1.25rem + 0.3vw);
+  }
+}
+.policy-container .policy-card strong {
   color: #132656;
 }
 
@@ -1564,12 +1618,27 @@
   color: #006d2c;
   border: 1px solid #006d2c;
 }
+@media screen and (max-width: 768px) {
+  .publication-container .publication-card .book-details .book-category {
+    font-size: 0.75rem;
+  }
+}
 .publication-container .publication-card .book-details a {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
   font-family: "poppins-semibold";
   color: #132656;
+}
+@media screen and (max-width: 991px) {
+  .publication-container .publication-card .book-details a {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publication-container .publication-card .book-details a {
+    font-size: 1rem;
+  }
 }
 .publication-container .publication-card .book-details p {
   font-size: 0.875rem;
@@ -1581,6 +1650,16 @@
 }
 .publication-container .publication-card .book-details .publish-date {
   font-size: 1rem;
+}
+@media screen and (max-width: 991px) {
+  .publication-container .publication-card .book-details .publish-date {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .publication-container .publication-card .book-details .publish-date {
+    font-size: 0.75rem;
+  }
 }
 .publication-container .publication-card .book-details .publish-date span {
   font-family: "poppins-medium";
@@ -1655,6 +1734,14 @@ h5,
 h6 {
   font-family: "poppins-semibold";
 }
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #132656;
+}
 
 .common-title-lg {
   border-bottom: 1px solid #47567b;
@@ -1671,6 +1758,11 @@ h6 {
 @media screen and (max-width: 1600px) {
   .common-title-lg h2 {
     font-size: 1.75rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .common-title-lg h2 {
+    font-size: 1.25rem;
   }
 }
 .common-title-lg h2::after {
@@ -1703,6 +1795,11 @@ h6 {
   height: 3px;
   background-color: #006d2c;
 }
+@media screen and (max-width: 991px) {
+  .common-title h4 {
+    font-size: 1.25rem;
+  }
+}
 
 .breadcrumb {
   margin: 2rem 0;
@@ -1719,6 +1816,24 @@ h6 {
   color: #132656;
   margin-bottom: 2rem;
   font-size: 2.4375rem;
+}
+@media screen and (max-width: 1200px) {
+  .training-detail-body h1,
+  .event-detail-body h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 991px) {
+  .training-detail-body h1,
+  .event-detail-body h1 {
+    font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .training-detail-body h1,
+  .event-detail-body h1 {
+    font-size: 1.25rem;
+  }
 }
 
 .training-status,
@@ -1745,6 +1860,10 @@ h6 {
   border-radius: 0.35rem;
   padding: 0.25rem 1.5rem;
   font-size: 0.915rem;
+}
+
+.event-detail-text .btn-success {
+  background-color: #006d2c !important;
 }
 
 .training-detail-text,
@@ -1784,14 +1903,14 @@ h6 {
   margin-bottom: 1rem;
   border: none;
   padding: 0.45rem 1.5rem;
-  background-color: #cc0000;
+  background-color: #ff0011;
   color: #fff;
   border-radius: 0.35rem;
 }
 .training-detail-text button.btn-success,
 .event-detail-text button.btn-success,
 .career-detail-text button.btn-success {
-  background-color: #006d2c !important;
+  background-color: #003f14;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1825,9 +1944,9 @@ h6 {
 }
 .pagination-container button::after {
   margin-left: 0.75rem;
-  border-top-width: 0.5rem;
-  border-right-width: 0.5rem;
-  border-left-width: 0.5rem;
+  border-top-width: 0.35rem;
+  border-right-width: 0.35rem;
+  border-left-width: 0.35rem;
   vertical-align: 0.1rem;
 }
 .pagination-container button:hover, .pagination-container button:focus, .pagination-container button:active {
@@ -1932,22 +2051,22 @@ h6 {
 }
 .trade-data-card .row .col-lg-8 h4,
 .useful-link-card .row .col-lg-8 h4 {
-  font-size: 1.5625rem;
+  font-size: 1.5rem;
 }
 .trade-data-card .row .col-lg-8 a,
 .useful-link-card .row .col-lg-8 a {
   margin-bottom: 2.25rem;
   color: #006d2c;
-  font-size: 1.1875rem;
+  font-size: 1.1575rem;
 }
 .trade-data-card .row .col-lg-8 button,
 .useful-link-card .row .col-lg-8 button {
-  background-color: #00531d;
+  background-color: #003f14;
   color: #fff;
   border: none;
-  border-radius: 0.25rem;
-  padding: 0.5rem 3rem;
-  font-size: 1.09375rem;
+  border-radius: 0.175rem;
+  padding: 0.25rem 2.75rem;
+  font-size: 1rem;
   font-family: "poppins-semibold";
 }
 

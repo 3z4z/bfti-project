@@ -5,6 +5,7 @@
     color: $primary;
     margin-bottom: 1.25rem;
   }
+
   p {
     margin-bottom: 1.25rem;
   }
@@ -15,25 +16,36 @@
   padding: 2rem 1rem;
   background-color: $primary-dark-2;
   border-radius: 0.125rem;
+
   input {
     padding: 0.75rem 1.25rem;
     border-radius: 0.25rem;
+
+    &.email {
+      @media screen and (min-width: 991px) {
+        width: 75%;
+      }
+    }
   }
+
   button {
     background-color: $danger;
     color: $white;
     border-radius: 0.25rem;
     padding: 0.675rem 1.75rem;
+
     &:hover {
       background-color: $danger-dark;
       color: $white;
     }
   }
+
   p {
     margin: 1rem 0 0;
     color: $white;
     font-family: $poppins-medium;
   }
+
   @media screen and (min-width: 576px) {
     padding: 3rem 4.5rem;
   }

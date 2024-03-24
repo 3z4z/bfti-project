@@ -14,6 +14,9 @@
 
     .banner-middle {
       background-color: $primary;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       >p {
         padding: 0.75rem 1rem;
@@ -24,9 +27,9 @@
         margin-top: 1rem;
       }
 
-      >div.d-flex {
+      .banner-event-date {
         align-items: center;
-        padding: 1rem;
+        padding: 1rem 1rem 0.35rem;
 
         span {
           font-size: 0.75rem;
@@ -123,12 +126,12 @@
         color: $white;
         font-family: $poppins-medium;
         padding: 0.075rem 0.75rem;
-        font-size: 0.8125rem;
+        font-size: 0.75rem;
         border-radius: 3px;
 
         &:first-child {
           background-color: $primary;
-          margin-right: 1rem;
+          margin-right: 0.5rem;
         }
 
         &:last-child {

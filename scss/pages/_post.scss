@@ -1,19 +1,35 @@
 .post-title {
   h1 {
     color: $body-heading-color;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.65rem;
+    }
+
+    @media screen and (max-width:768px) {
+      font-size: 1.25rem;
+    }
   }
+
   div {
     padding: 1.5rem 0 2.5rem;
+
     span {
       font-family: $poppins-medium;
       color: $white;
       padding: 0.125rem 0.5rem;
       font-size: 0.7rem;
+
       &:first-child {
         margin-right: 0.25rem;
         color: $white;
         background-color: $primary;
       }
+
       &:last-child {
         background-color: $danger;
       }
@@ -23,16 +39,20 @@
 
 .post-body {
   margin-bottom: 2rem;
+
   .post-body-container {
     p {
       span {
         font-family: $poppins-extrabold;
       }
+
       margin-bottom: 2rem;
+
       &:first-child {
         margin-top: 2rem;
       }
     }
+
     blockquote {
       margin-bottom: 2rem;
       padding: 2rem;
@@ -49,6 +69,7 @@
     color: $body-heading-color;
     font-size: 1.125rem;
   }
+
   a {
     color: $white;
     border-radius: 0.125rem;
@@ -56,15 +77,19 @@
     background-color: $primary;
     font-family: $poppins-semibold;
     font-size: 0.875rem;
+
     &.share-facebook {
       background-color: $facebook;
     }
+
     &.share-tweet {
       background-color: $twitter;
     }
+
     &.share-google-plus {
       background-color: $g-plus;
     }
+
     &.share-pinterest {
       background-color: $pinterest;
     }
@@ -73,29 +98,35 @@
 
 .post-card {
   margin-bottom: 3rem;
+
   div {
     display: flex;
     flex-wrap: wrap;
+
     span {
       font-family: $poppins-medium;
       color: $white;
       padding: 0.125rem 0.5rem;
       font-size: 0.7rem;
+
       &:first-child {
         margin-right: 0.25rem;
         color: $white;
         background-color: $primary;
       }
+
       &:last-child {
         background-color: $danger;
       }
     }
   }
+
   h5 {
     color: $body-heading-color;
     margin-bottom: 1.75rem;
     font-size: 1.125rem;
   }
+
   button {
     font-family: $poppins-medium;
     background-color: $primary;

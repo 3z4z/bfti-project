@@ -1,22 +1,39 @@
 .policy-container {
   margin: 3rem 0;
+
   .policy-card {
     padding: 2rem 0;
     border-top: 1px solid $border-color;
+
     p {
+      font-size: 0.815rem;
+
       &:first-child {
         span {
           margin-right: 0.5rem;
-          font-size: 0.875rem;
           font-family: $poppins-medium;
+
           &:first-child {
             color: $amber-red;
+          }
+
+          &:last-child {
+            color: $body-heading-color;
           }
         }
       }
     }
+
     h2 {
       margin-bottom: 1.5rem;
+      color: $body-heading-color;
+
+      @media screen and (max-width: 768px) {
+        font-size: calc(1.25rem + .3vw);
+      }
+    }
+
+    strong {
       color: $body-heading-color;
     }
   }

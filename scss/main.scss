@@ -85,6 +85,10 @@ h4,
 h5,
 h6 {
   font-family: $poppins-semibold;
+
+  a {
+    color: $body-heading-color;
+  }
 }
 
 .common-title-lg {
@@ -101,6 +105,10 @@ h6 {
 
     @media screen and (max-width:1600px) {
       font-size: 1.75rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.25rem;
     }
 
     &::after {
@@ -135,6 +143,10 @@ h6 {
       height: 3px;
       background-color: $primary;
     }
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -155,6 +167,18 @@ h6 {
     color: $body-heading-color;
     margin-bottom: 2rem;
     font-size: 2.4375rem;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 1.65rem;
+    }
+
+    @media screen and (max-width:768px) {
+      font-size: 1.25rem;
+    }
   }
 }
 
@@ -181,6 +205,12 @@ h6 {
     border-radius: 0.35rem;
     padding: 0.25rem 1.5rem;
     font-size: 0.915rem;
+  }
+}
+
+.event-detail-text {
+  .btn-success {
+    background-color: $primary !important;
   }
 }
 
@@ -216,12 +246,12 @@ h6 {
     margin-bottom: 1rem;
     border: none;
     padding: 0.45rem 1.5rem;
-    background-color: $danger;
+    background-color: $red;
     color: $white;
     border-radius: 0.35rem;
 
     &.btn-success {
-      background-color: $primary !important;
+      background-color: $primary-dark-2;
     }
   }
 }
@@ -256,9 +286,9 @@ h6 {
 
     &::after {
       margin-left: 0.75rem;
-      border-top-width: 0.5rem;
-      border-right-width: 0.5rem;
-      border-left-width: 0.5rem;
+      border-top-width: 0.35rem;
+      border-right-width: 0.35rem;
+      border-left-width: 0.35rem;
       vertical-align: 0.1rem;
     }
 
@@ -384,22 +414,22 @@ h6 {
       flex-direction: column;
 
       h4 {
-        font-size: 1.5625rem;
+        font-size: 1.5rem;
       }
 
       a {
         margin-bottom: 2.25rem;
         color: $primary;
-        font-size: 1.1875rem;
+        font-size: 1.1575rem;
       }
 
       button {
-        background-color: $primary-dark;
+        background-color: $primary-dark-2;
         color: $white;
         border: none;
-        border-radius: 0.25rem;
-        padding: 0.5rem 3rem;
-        font-size: 1.09375rem;
+        border-radius: 0.175rem;
+        padding: 0.25rem 2.75rem;
+        font-size: 1rem;
         font-family: $poppins-semibold;
       }
     }

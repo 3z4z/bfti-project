@@ -2,6 +2,7 @@
   color: $white;
   background-color: $primary;
   border-color: $primary;
+
   &:hover {
     background-color: $primary-dark;
     border-color: $primary-dark;
@@ -11,8 +12,13 @@
 .btn-danger {
   background-color: $danger;
   border-color: $danger;
+
   &:hover {
     background-color: $danger-dark;
     border-color: $danger-dark;
   }
+}
+
+.dropdown-toggle {
+  font-size: 0.875rem;
 }

@@ -10,7 +10,9 @@
       color: $white;
     }
   }
+
   .training-body {
+
     h4,
     h5,
     h6 {
@@ -22,13 +24,16 @@
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid $border-color;
+
     p {
       font-family: $poppins-semibold;
     }
+
     h4 {
       color: $body-heading-color;
       margin-bottom: 2.5rem;
     }
+
     div {
       &:last-child {
         p {
@@ -36,6 +41,7 @@
         }
       }
     }
+
     &:last-child {
       border-bottom: none;
     }
@@ -48,6 +54,7 @@
       }
     }
   }
+
   .pagination-container {
     border-bottom: 1px solid $border-color;
   }
@@ -55,26 +62,31 @@
 
 #training-details {
   margin-bottom: 2rem;
+
   .training-status {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
   .related-training-card {
     a {
       font-size: 1.125rem;
       color: $body-heading-color;
       font-family: $poppins-semibold;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
     }
+
     p {
       padding-left: 0.5rem;
       color: $white;
       font-family: $poppins-medium;
+
       &.open-badge {
         background-image: url(../../bfti-project/assets/images/training/badge.png);
         background-repeat: no-repeat;
         background-size: contain;
       }
+
       &.close-badge {
         background-image: url(../../bfti-project/assets/images/training/close-badge.png);
         background-repeat: no-repeat;
@@ -82,6 +94,7 @@
       }
     }
   }
+
   @media screen and (min-width: 991px) {
     margin-bottom: 4rem;
   }

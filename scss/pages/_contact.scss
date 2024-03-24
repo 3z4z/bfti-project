@@ -1,5 +1,6 @@
 #contact {
   margin-bottom: 4rem;
+
   .contact-detail {
     padding: 3rem 1.75rem;
   }
@@ -11,6 +12,7 @@
 
   .location-map {
     overflow: hidden;
+
     iframe {
       @media screen and (max-width: 991px) {
         min-height: 200px;
@@ -22,19 +24,25 @@
     @media screen and (max-width: 991px) {
       margin-top: 3rem;
     }
+
     padding: 2.25rem 2.15rem;
     background-color: $primary-dark;
+
     h5 {
       text-align: center;
       color: $white;
       margin-bottom: 2rem;
     }
+
     input,
     textarea {
       margin-bottom: 1rem;
       border-radius: 0.15rem;
+      font-size: 0.875rem;
     }
+
     button {
+      font-size: 0.875rem;
       margin-top: 0.75rem;
       background-color: $danger;
       color: $white;

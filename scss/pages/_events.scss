@@ -1,8 +1,10 @@
 #events {
   margin-bottom: 3rem;
+
   .event-banner {
     position: relative;
     z-index: 0;
+
     img {
       width: 100%;
       height: 100%;
@@ -12,6 +14,7 @@
       left: 0;
       position: absolute;
     }
+
     h1 {
       padding: 9.5rem 0;
       text-align: center;
@@ -28,12 +31,15 @@
     .event-card {
       padding: 2.5rem 0;
       border-bottom: 1px solid $border-color;
+
       .event-category {
-        > span {
+        >span {
           font-family: $poppins-medium;
           font-size: 0.875rem;
 
           &.event-organizer {
+            color: $body-heading-color;
+
             span {
               &:first-child {
                 margin-right: 0.5rem;
@@ -43,28 +49,35 @@
           }
         }
       }
-      h3 {
-        font-size: 1.75rem;
+
+      h4 {
         color: $body-heading-color;
       }
+
       .event-detail {
         p {
           display: flex;
           align-items: center;
           margin-right: 1rem;
-          font-size: 1rem;
           font-family: $poppins-semibold;
           color: $body-heading-color;
+
+          @media screen and (min-width: 1200px) {
+            font-size: 1rem;
+          }
+
           img {
             margin-right: 0.5rem;
           }
         }
       }
+
       &:last-child {
         border-bottom: none;
       }
     }
   }
+
   @media screen and (min-width: 991px) {
     margin-bottom: 5rem;
   }
