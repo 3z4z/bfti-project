@@ -596,17 +596,24 @@
 }
 #home .banner .banner-middle {
   background-color: #006d2c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
-#home .banner .banner-middle > p {
+#home .banner .banner-middle div > p {
   padding: 0.75rem 1rem;
   font-size: 0.75rem;
   background-color: #05441e;
   color: #fff;
   margin-bottom: 0;
   margin-top: 1rem;
+}
+#home .banner .banner-middle .slick-track,
+#home .banner .banner-middle .slick-list {
+  height: 100% !important;
+}
+#home .banner .banner-middle .slick-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #home .banner .banner-middle .banner-event-date {
   align-items: center;
@@ -627,7 +634,7 @@
   padding: 0 1rem;
 }
 #home .banner .banner-middle a h4 {
-  width: 85%;
+  width: 95%;
 }
 #home .banner .banner-middle a span {
   text-align: right;
@@ -635,6 +642,12 @@
 }
 #home .banner .banner-middle .banner-img-container {
   padding: 0 1rem;
+}
+#home .banner .slider-button {
+  z-index: 999999999;
+  position: absolute;
+  bottom: 52px;
+  right: 36px;
 }
 #home .banner .bfti-updates {
   background-color: #aedfc5;
@@ -679,6 +692,10 @@
   font-family: "poppins-semibold";
   color: #A13D3D;
 }
+#home .scrolling-news a {
+  color: #23292e;
+  font-family: "poppins-semibold";
+}
 #home .home-card {
   margin-bottom: 1.5rem;
 }
@@ -700,14 +717,14 @@
   color: #132656;
   margin-bottom: 1.75rem;
 }
-#home .home-card button {
+#home .home-card .read-more {
   background-color: #006d2c;
   padding: 0.35rem 1.25rem;
   font-size: 0.875rem;
   color: #fff;
   border: none;
 }
-#home .home-card button:hover, #home .home-card button:focus {
+#home .home-card .read-more:hover, #home .home-card .read-more:focus {
   background-color: #00531d;
 }
 #home .home-thumb {
@@ -722,14 +739,14 @@
   color: #006d2c;
   font-size: 0.6875rem;
 }
-#home .home-thumb button {
+#home .home-thumb .read-more {
   border: 1px solid #006d2c;
   color: #006d2c;
   background-color: #fff;
   padding: 0.125rem 0.5rem;
   font-size: 0.75rem;
 }
-#home .home-thumb button:hover {
+#home .home-thumb .read-more:hover {
   background-color: #006d2c;
   color: #fff;
 }
@@ -818,7 +835,7 @@
   margin-bottom: 1.75rem;
   font-size: 1.125rem;
 }
-#category .col-lg-4 .category-card button {
+#category .col-lg-4 .category-card .read-more {
   font-family: "poppins-medium";
   background-color: #d4e6db;
   color: #006d2c;
@@ -943,7 +960,7 @@
   margin-bottom: 1.75rem;
   font-size: 1.125rem;
 }
-.post-card button {
+.post-card .read-more {
   font-family: "poppins-medium";
   background-color: #006d2c;
   color: #fff;
@@ -1162,7 +1179,7 @@
 #research .research-card-container .research-card .col-md-8 h5 {
   color: #132656;
 }
-#research .research-card-container .research-card .col-md-8 button {
+#research .research-card-container .research-card .col-md-8 .read-more {
   font-family: "poppins-medium";
   background-color: #d4e6db;
   color: #006d2c;
@@ -1747,6 +1764,7 @@ h6 a {
   border-bottom: 1px solid #47567b;
   margin: 3.2rem 0 2.75rem;
 }
+.common-title-lg h1,
 .common-title-lg h2 {
   font-size: 2rem;
   position: relative;
@@ -1756,15 +1774,18 @@ h6 a {
   color: #132656;
 }
 @media screen and (max-width: 1600px) {
+  .common-title-lg h1,
   .common-title-lg h2 {
     font-size: 1.75rem;
   }
 }
 @media screen and (max-width: 991px) {
+  .common-title-lg h1,
   .common-title-lg h2 {
     font-size: 1.25rem;
   }
 }
+.common-title-lg h1::after,
 .common-title-lg h2::after {
   content: "";
   position: absolute;
@@ -1779,14 +1800,17 @@ h6 a {
   border-bottom: 1px solid #47567b;
   margin: 3.75rem 0 2.75rem;
 }
-.common-title h4 {
+.common-title h4,
+.common-title h1 {
+  font-size: calc(1.275rem + 0.3vw);
   position: relative;
   display: inline-block;
   padding-bottom: 1rem;
   margin-bottom: 0;
   color: #132656;
 }
-.common-title h4::after {
+.common-title h4::after,
+.common-title h1::after {
   content: "";
   position: absolute;
   bottom: -1.5px;
@@ -1796,7 +1820,8 @@ h6 a {
   background-color: #006d2c;
 }
 @media screen and (max-width: 991px) {
-  .common-title h4 {
+  .common-title h4,
+  .common-title h1 {
     font-size: 1.25rem;
   }
 }
@@ -1932,9 +1957,11 @@ h6 a {
 .pagination-container {
   margin-top: 3.75rem;
 }
+.pagination-container h1,
 .pagination-container h4 {
   color: #132656;
   margin-bottom: 2rem;
+  font-size: calc(1.25rem + 0.3vw);
 }
 .pagination-container button {
   padding: 0.5rem 1rem;

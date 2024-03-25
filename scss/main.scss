@@ -95,6 +95,7 @@ h6 {
   border-bottom: 1px solid $border-color;
   margin: 3.2rem 0 2.75rem;
 
+  h1,
   h2 {
     font-size: 2rem;
     position: relative;
@@ -127,7 +128,9 @@ h6 {
   border-bottom: 1px solid $border-color;
   margin: 3.75rem 0 2.75rem;
 
-  h4 {
+  h4,
+  h1 {
+    font-size: calc(1.275rem + .3vw);
     position: relative;
     display: inline-block;
     padding-bottom: 1rem;
@@ -273,9 +276,11 @@ h6 {
 .pagination-container {
   margin-top: 3.75rem;
 
+  h1,
   h4 {
     color: $body-heading-color;
     margin-bottom: 2rem;
+    font-size: calc(1.25rem + 0.3vw);
   }
 
   button {
