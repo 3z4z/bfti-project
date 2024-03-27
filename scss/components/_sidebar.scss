@@ -113,6 +113,10 @@
       font-family: $poppins-semibold;
       color: $body-heading-color;
       font-size: 0.75rem;
+
+      @media screen and (max-width: 576px) {
+        font-size: 0.875rem;
+      }
     }
   }
 

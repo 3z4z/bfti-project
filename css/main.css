@@ -398,6 +398,11 @@
   color: #132656;
   font-size: 0.75rem;
 }
+@media screen and (max-width: 576px) {
+  .sidebar-directors .w-65 p {
+    font-size: 0.875rem;
+  }
+}
 .sidebar-directors .director-thumb-info {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
