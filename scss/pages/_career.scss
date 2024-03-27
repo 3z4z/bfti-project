@@ -60,9 +60,24 @@
 #career-detail {
   margin-bottom: 3rem;
 
-  .career-info {
-    h3 {
-      color: $body-heading-color;
+  .career-detail-text {
+    .career-info {
+      h3 {
+        color: $body-heading-color;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      ul {
+        li {
+          font-size: 0.875rem;
+
+          img {
+            width: 18px;
+          }
+        }
+      }
     }
   }
+
 }

@@ -1,4 +1,25 @@
 .bfti-topbar {
   background-color: $primary-light;
-  padding: 0.125rem 0;
+  padding: 0.25rem 0;
+
+  #search-item {
+    input {
+      min-height: auto;
+      height: 28px;
+    }
+
+    button {
+      height: 28px;
+      line-height: 16px;
+    }
+  }
+
+  .topbar-link-share,
+  .topbar-time {
+    font-family: $poppins-semibold;
+
+    @media screen and (max-width: 395px) {
+      text-align: center;
+    }
+  }
 }

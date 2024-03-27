@@ -14,9 +14,9 @@
         <!-- topbar start -->
         <div class="bfti-topbar">
           <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-sm-between justify-content-center">
               <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center">
-                <span class="fs-md text-primary-dark fw-semibold">22 October 2023 | 12:36pm</span>
+                <span class="fs-md text-primary-dark topbar-time">22 October 2023 | 12:36pm</span>
               </div>
               <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center ms-lg-5 justify-content-end justify-content-lg-start">
                 <span class="fs-md text-primary fw-semibold d-none d-sm-inline-block">Follow Us</span>
@@ -36,11 +36,13 @@
                   <img src="./../assets/icons/user.svg" height="16" alt="user" />
                 </a>
               </div>
-              <div class="col-lg-3 d-flex ps-lg-5 mt-2 mb-3 my-md-0">
-                <input type="text" class="form-control form-control-sm" name="search" />
-                <button class="btn btn-sm btn-primary ms-2">
-                  <img src="./../assets/icons/search-alt.svg" height="16" alt="search-alt" />
-                </button>
+              <div class="col-lg-3">
+                <form action="#" id="search-item" class="d-flex ps-lg-5 mt-2 mb-3 my-md-0">
+                  <input type="text" class="form-control form-control-sm" name="search" />
+                  <button class="btn btn-sm btn-primary ms-2" type="submit">
+                    <img src="./../assets/icons/search-alt.svg" height="16" alt="search-alt" />
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -52,16 +54,16 @@
           <div class="nav-brand">
             <div class="container">
               <div class="row py-3 py-xxxl-4 align-items-center pe-0">
-                <div class="col-lg-2 col-md-3 text-center text-md-start">
+                <div class="col-lg-2 col-md-3 col-5 text-center text-md-start">
                   <a href="../index.html"><img src="./../assets/images/bfti-logo.png" height="71" alt="bfti-logo" /></a>
                 </div>
-                <div class="col-lg-10 col-md-9 row pe-0 align-items-center">
-                  <div class="col-xl-8 text-xl-center text-md-end text-center">
-                    <h2 class="mb-md-0 mt-4 mt-md-0">Bangladesh Foreign Trade Institute</h2>
+                <div class="col-lg-10 col-md-9 col-7 row pe-0 align-items-center nav-title">
+                  <div class="col-xl-8 text-xl-center text-end">
+                    <h2 class="mb-md-0 mt-md-0">Bangladesh Foreign Trade Institute</h2>
                   </div>
-                  <div class="col-xl-4 ps-xxxl-5 text-xl-start text-md-end text-center">
+                  <div class="col-xl-4 ps-xxxl-5 text-xl-start text-end">
                     <h5 class="fw-medium font-italic ms-xxl-2 mb-0">
-                      <span class="bfti-slogan">BFTI Stands for Excellence in Trade and Economic Research</span>
+                      <span>BFTI Stands for Excellence in Trade and Economic Research</span>
                     </h5>
                   </div>
                 </div>
@@ -134,7 +136,7 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="nav-item"><a href="./../pages/contact.html">Contact</a></li>
+                  <li class="nav-item active"><a href="./../pages/contact.html">Contact</a></li>
                 </ul>
               </div>
             </div>
@@ -167,8 +169,10 @@
                         <h6 class="ms-2 mb-0">Location</h6>
                       </div>
                       <div class="mt-2">
-                        <span>TCB Bhaban(5th Floor)</span>
-                        <span>Karwan Bazar, Dhaka-1215</span>
+                        <a href="https://maps.app.goo.gl/LoR86dGP84C8w9Tm8">
+                          <span>TCB Bhaban(5th Floor)</span>
+                          <span>Karwan Bazar, Dhaka-1215</span>
+                        </a>
                       </div>
                     </div>
 
@@ -178,8 +182,8 @@
                         <h6 class="ms-2">Phone & Fax</h6>
                       </div>
                       <div class="mt-2">
-                        <span>+88055488745</span>
-                        <span>+88055488745 (Fax)</span>
+                        <a href="tel:+88055488745">+88055488745</a>
+                        <a href="faxto:+88055488745">+88055488745 (Fax)</a>
                       </div>
                     </div>
 
@@ -189,7 +193,7 @@
                         <h6 class="ms-2">Email</h6>
                       </div>
                       <div class="mt-2">
-                        <span>info@bfti.org.bd</span>
+                        <a href="mailto:info@bfti.org.bd">info@bfti.org.bd</a>
                       </div>
                     </div>
                   </div>
@@ -209,7 +213,7 @@
               </div>
               <div class="row justify-content-end mt-4">
                 <div class="col-lg-8">
-                  <form class="contact-form">
+                  <form action="#" id="contact-form" class="contact-form">
                     <h5>Contact Us</h5>
                     <input type="text" class="form-control" placeholder="Type name here" name="contactName" />
                     <input type="text" class="form-control" placeholder="Type email address" name="contactEmail" />

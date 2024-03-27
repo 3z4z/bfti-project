@@ -39,6 +39,12 @@
       text-align: left;
     }
 
+    @media screen and (max-width: 576px) {
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
     .director-detail,
     .team-detail {
       padding: 2rem 0;
@@ -60,6 +66,10 @@
 
           a {
             color: $body-heading-color;
+          }
+
+          @media screen and (max-width: 768px) {
+            font-size: 0.8135rem;
           }
         }
       }

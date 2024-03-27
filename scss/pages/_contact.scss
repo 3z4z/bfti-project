@@ -3,6 +3,14 @@
 
   .contact-detail {
     padding: 3rem 1.75rem;
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: $primary-dark;
+      }
+    }
   }
 
   .location-map,

@@ -14,9 +14,9 @@
         <!-- topbar start -->
         <div class="bfti-topbar">
           <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-sm-between justify-content-center">
               <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center">
-                <span class="fs-md text-primary-dark fw-semibold">22 October 2023 | 12:36pm</span>
+                <span class="fs-md text-primary-dark topbar-time">22 October 2023 | 12:36pm</span>
               </div>
               <div class="col-lg-3 col-sm-6 col-auto d-flex align-items-center ms-lg-5 justify-content-end justify-content-lg-start">
                 <span class="fs-md text-primary fw-semibold d-none d-sm-inline-block">Follow Us</span>
@@ -36,11 +36,13 @@
                   <img src="./../assets/icons/user.svg" height="16" alt="user" />
                 </a>
               </div>
-              <div class="col-lg-3 d-flex ps-lg-5 mt-2 mb-3 my-md-0">
-                <input type="text" class="form-control form-control-sm" name="search" />
-                <button class="btn btn-sm btn-primary ms-2">
-                  <img src="./../assets/icons/search-alt.svg" height="16" alt="search-alt" />
-                </button>
+              <div class="col-lg-3">
+                <form action="#" id="search-item" class="d-flex ps-lg-5 mt-2 mb-3 my-md-0">
+                  <input type="text" class="form-control form-control-sm" name="search" />
+                  <button class="btn btn-sm btn-primary ms-2" type="submit">
+                    <img src="./../assets/icons/search-alt.svg" height="16" alt="search-alt" />
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -52,16 +54,16 @@
           <div class="nav-brand">
             <div class="container">
               <div class="row py-3 py-xxxl-4 align-items-center pe-0">
-                <div class="col-lg-2 col-md-3 text-center text-md-start">
+                <div class="col-lg-2 col-md-3 col-5 text-center text-md-start">
                   <a href="../index.html"><img src="./../assets/images/bfti-logo.png" height="71" alt="bfti-logo" /></a>
                 </div>
-                <div class="col-lg-10 col-md-9 row pe-0 align-items-center">
-                  <div class="col-xl-8 text-xl-center text-md-end text-center">
-                    <h2 class="mb-md-0 mt-4 mt-md-0">Bangladesh Foreign Trade Institute</h2>
+                <div class="col-lg-10 col-md-9 col-7 row pe-0 align-items-center nav-title">
+                  <div class="col-xl-8 text-xl-center text-end">
+                    <h2 class="mb-md-0 mt-md-0">Bangladesh Foreign Trade Institute</h2>
                   </div>
-                  <div class="col-xl-4 ps-xxxl-5 text-xl-start text-md-end text-center">
+                  <div class="col-xl-4 ps-xxxl-5 text-xl-start text-end">
                     <h5 class="fw-medium font-italic ms-xxl-2 mb-0">
-                      <span class="bfti-slogan">BFTI Stands for Excellence in Trade and Economic Research</span>
+                      <span>BFTI Stands for Excellence in Trade and Economic Research</span>
                     </h5>
                   </div>
                 </div>
@@ -79,7 +81,7 @@
               <div class="nav-menu">
                 <ul>
                   <li class="nav-item"><a href="./../pages/about-us.html">About BFTI</a></li>
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a href="./../pages/research.html">Research </a>
                   </li>
                   <li class="nav-item">
@@ -148,24 +150,18 @@
             <div class="col-lg-9">
               <div class="pagination-container">
                 <h1>Research</h1>
-                <div class="d-sm-flex justify-content-between align-items-center">
+                <div class="d-sm-flex justify-content-between align-items-end align-items-md-center">
                   <div class="d-flex flex-wrap">
-                    <div class="dropdown my-1 me-3">
-                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Research</button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                    <div class="dropdown my-1">
-                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Research by Year</button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
+                    <select name="research-type" id="research-type" class="select-filter my-1 me-3">
+                      <option value="">All Research</option>
+                      <option value="">Upcoming Research</option>
+                      <option value="">Ongoing Research</option>
+                    </select>
+                    <select name="research-time" id="research-time" class="select-filter my-1">
+                      <option value="">Research By Year</option>
+                      <option value="">Research By Month</option>
+                      <option value="">Research By Week</option>
+                    </select>
                   </div>
                   <div class="mt-3 mt-sm-0">
                     <div class="d-flex align-items-center justify-content-end">
@@ -197,14 +193,14 @@
               <div class="research-card-container">
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Research</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Research</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -218,14 +214,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-2.jpg" alt="pic-2" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-2.jpg" alt="pic-2" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Policy Advocacy</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Policy Advocacy</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -239,14 +235,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-3.jpg" alt="pic-3" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-3.jpg" alt="pic-3" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Academic</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Academic</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -260,14 +256,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Training</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Training</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -286,14 +282,14 @@
               <div class="research-card-container">
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Research</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Research</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -307,14 +303,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-2.jpg" alt="pic-2" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-2.jpg" alt="pic-2" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Policy Advocacy</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Policy Advocacy</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -328,14 +324,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-3.jpg" alt="pic-3" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-3.jpg" alt="pic-3" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Academic</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Academic</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>
@@ -349,14 +345,14 @@
                 </div>
                 <div class="research-card">
                   <div class="row">
-                    <div class="col-md-4">
-                      <img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" />
+                    <div class="col-md-4 col-sm-5">
+                      <a href="#"><img src="./../assets/images/research/pic-1.jpg" alt="pic-1" class="w-100" /></a>
                     </div>
-                    <div class="col-md-8 d-flex justify-content-between flex-column">
+                    <div class="col-md-8 col-sm-7 d-flex justify-content-between flex-column">
                       <div>
-                        <div class="d-flex flex-wrap mb-1 py-2 py-md-0">
-                          <span class="my-1">20th October 2023</span>
-                          <span class="my-1">Training</span>
+                        <div class="d-flex flex-wrap mb-1 py-2 py-sm-0">
+                          <span class="my-1 rounded-1">20th October 2023</span>
+                          <span class="my-1 rounded-1">Training</span>
                         </div>
                         <h5 class="mb-4 mb-md-0">
                           <a href="#">Impacts of Padma Multipurpose Bridge on the Foreign Trade of Bangladesh</a>

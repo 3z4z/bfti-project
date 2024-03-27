@@ -18,6 +18,17 @@
             position: relative;
             list-style: none;
 
+            &.active {
+              &::after {
+                border-top-width: 7px;
+              }
+
+              >a {
+                background-color: $primary-dark;
+                color: $white;
+              }
+            }
+
             a {
               color: #eee;
               padding: 0.75rem 1.25rem;
@@ -27,7 +38,8 @@
                 font-size: 0.75rem;
               }
 
-              &:hover {
+              &:hover,
+              &:focus {
                 background-color: $primary-dark;
                 color: $white;
               }
@@ -63,7 +75,8 @@
               }
             }
 
-            &:hover {
+            &:hover,
+            &:focus {
               >ul {
                 display: block;
               }
@@ -87,7 +100,8 @@
                 border-top: 0 solid $white;
               }
 
-              &:hover {
+              &:hover,
+              &:focus {
                 &::after {
                   border-top-width: 7px;
                 }
@@ -96,12 +110,6 @@
           }
         }
       }
-    }
-  }
-
-  .bfti-slogan {
-    @media screen and (max-width: 768px) {
-      font-size: 1rem;
     }
   }
 }

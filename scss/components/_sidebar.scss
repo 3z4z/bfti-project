@@ -51,7 +51,8 @@
       border-bottom: 8px solid transparent;
     }
 
-    &:hover {
+    &:hover,
+    &.active {
       background-color: $primary-dark;
 
       a {
@@ -116,7 +117,7 @@
   }
 
   .director-thumb-info {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.25rem;
     font-size: 0.75rem;
     font-family: $poppins-medium;
@@ -173,5 +174,9 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  @media screen and (max-width: 991px) {
+    margin-top: 0;
   }
 }

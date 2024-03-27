@@ -42,6 +42,7 @@ $poppins-mediumItalic: 'poppins-mediumItalic';
 
 .fw-semibold {
   font-family: $poppins-semibold !important;
+  font-weight: inherit !important;
 }
 
 .fw-medium {

@@ -75,7 +75,9 @@
         }
       }
 
-      button {
+      a.download {
+        display: inline-block;
+        font-size: inherit;
         background-color: $danger;
         color: $white;
         padding: 0.25rem 1.25rem;
@@ -90,6 +92,10 @@
 
     &:last-child {
       border-bottom: none;
+
+      @media screen and (max-width: 991px) {
+        padding-bottom: 0;
+      }
     }
   }
 }

@@ -29,6 +29,7 @@
 
 .fw-semibold {
   font-family: "poppins-semibold" !important;
+  font-weight: inherit !important;
 }
 
 .fw-medium.font-italic {
@@ -83,7 +84,25 @@
 
 .bfti-topbar {
   background-color: #d4e6db;
-  padding: 0.125rem 0;
+  padding: 0.25rem 0;
+}
+.bfti-topbar #search-item input {
+  min-height: auto;
+  height: 28px;
+}
+.bfti-topbar #search-item button {
+  height: 28px;
+  line-height: 16px;
+}
+.bfti-topbar .topbar-link-share,
+.bfti-topbar .topbar-time {
+  font-family: "poppins-semibold";
+}
+@media screen and (max-width: 395px) {
+  .bfti-topbar .topbar-link-share,
+  .bfti-topbar .topbar-time {
+    text-align: center;
+  }
 }
 
 .bfti-navbar .navmenu-container {
@@ -103,6 +122,13 @@
   position: relative;
   list-style: none;
 }
+.bfti-navbar .navmenu-container .container .nav-menu ul li.active::after {
+  border-top-width: 7px;
+}
+.bfti-navbar .navmenu-container .container .nav-menu ul li.active > a {
+  background-color: #00531d;
+  color: #fff;
+}
 .bfti-navbar .navmenu-container .container .nav-menu ul li a {
   color: #eee;
   padding: 0.75rem 1.25rem;
@@ -111,7 +137,7 @@
   margin-left: 0.5rem;
   font-size: 0.75rem;
 }
-.bfti-navbar .navmenu-container .container .nav-menu ul li a:hover {
+.bfti-navbar .navmenu-container .container .nav-menu ul li a:hover, .bfti-navbar .navmenu-container .container .nav-menu ul li a:focus {
   background-color: #00531d;
   color: #fff;
 }
@@ -141,7 +167,7 @@
   top: 0;
   left: 100%;
 }
-.bfti-navbar .navmenu-container .container .nav-menu ul li:hover > ul {
+.bfti-navbar .navmenu-container .container .nav-menu ul li:hover > ul, .bfti-navbar .navmenu-container .container .nav-menu ul li:focus > ul {
   display: block;
 }
 @media screen and (min-width: 991px) {
@@ -160,13 +186,8 @@
     border-right: 8px solid transparent;
     border-top: 0 solid #fff;
   }
-  .bfti-navbar .navmenu-container .container .nav-menu ul .nav-item:hover::after {
+  .bfti-navbar .navmenu-container .container .nav-menu ul .nav-item:hover::after, .bfti-navbar .navmenu-container .container .nav-menu ul .nav-item:focus::after {
     border-top-width: 7px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .bfti-navbar .bfti-slogan {
-    font-size: 1rem;
   }
 }
 
@@ -232,7 +253,7 @@
   color: #d4e6db;
 }
 .footer .footer-body {
-  background-color: #006d2c;
+  background-color: #005a21;
   color: #fff;
   padding-bottom: 2.75rem;
 }
@@ -260,7 +281,7 @@
 }
 .footer .copyright {
   padding: 2rem 0;
-  background-color: #00531d;
+  background-color: #003f14;
 }
 
 .sidebar-cats li,
@@ -317,16 +338,19 @@
   border-left: 0 solid rgba(255, 255, 255, 0.35);
   border-bottom: 8px solid transparent;
 }
-.sidebar-cats li:hover,
-.sidebar-shortcuts li:hover {
+.sidebar-cats li:hover, .sidebar-cats li.active,
+.sidebar-shortcuts li:hover,
+.sidebar-shortcuts li.active {
   background-color: #00531d;
 }
-.sidebar-cats li:hover a,
-.sidebar-shortcuts li:hover a {
+.sidebar-cats li:hover a, .sidebar-cats li.active a,
+.sidebar-shortcuts li:hover a,
+.sidebar-shortcuts li.active a {
   color: #d4e6db;
 }
-.sidebar-cats li:hover::after,
-.sidebar-shortcuts li:hover::after {
+.sidebar-cats li:hover::after, .sidebar-cats li.active::after,
+.sidebar-shortcuts li:hover::after,
+.sidebar-shortcuts li.active::after {
   border-left: 8px solid rgba(255, 255, 255, 0.35);
 }
 
@@ -375,7 +399,7 @@
   font-size: 0.75rem;
 }
 .sidebar-directors .director-thumb-info {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0.25rem;
   font-size: 0.75rem;
   font-family: "poppins-medium";
@@ -425,6 +449,11 @@
 }
 .sidebar-publication li:last-child {
   margin-bottom: 0;
+}
+@media screen and (max-width: 991px) {
+  .sidebar-publication {
+    margin-top: 0;
+  }
 }
 
 .form-control:focus {
@@ -540,6 +569,11 @@
 #training .training-card:last-child {
   border-bottom: none;
 }
+@media screen and (max-width: 768px) {
+  #training .training-card {
+    padding-bottom: 1rem;
+  }
+}
 #training .col-lg-4:last-child .training-card {
   margin-bottom: 0;
 }
@@ -550,15 +584,27 @@
 #training-details {
   margin-bottom: 2rem;
 }
-#training-details .training-status {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 #training-details .related-training-card a {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #132656;
   font-family: "poppins-semibold";
-  margin: 1rem 0;
+  margin: 0 0 1rem;
+}
+@media screen and (min-width: 1600px) {
+  #training-details .related-training-card a {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 1600px) {
+  #training-details .related-training-card .d-flex {
+    align-items: end;
+  }
+  #training-details .related-training-card .d-flex h6 {
+    font-size: 0.875rem;
+  }
+  #training-details .related-training-card .d-flex img {
+    width: 18px;
+  }
 }
 #training-details .related-training-card p {
   padding-left: 0.5rem;
@@ -640,9 +686,6 @@
   text-align: right;
   width: 15%;
 }
-#home .banner .banner-middle .banner-img-container {
-  padding: 0 1rem;
-}
 #home .banner .slider-button {
   z-index: 999999999;
   position: absolute;
@@ -659,9 +702,10 @@
 }
 #home .banner .bfti-updates .update-card-container {
   overflow-y: auto;
-  max-height: 69vh;
+  max-height: 59vh;
 }
 #home .banner .bfti-updates .update-card-container .update-card {
+  min-width: 100%;
   margin-bottom: 0.5rem;
   font-size: 0.8125rem;
   padding: 0.75rem;
@@ -717,6 +761,11 @@
   color: #132656;
   margin-bottom: 1.75rem;
 }
+@media screen and (max-width: 1600px) {
+  #home .home-card h5 {
+    font-size: 1.076rem;
+  }
+}
 #home .home-card .read-more {
   background-color: #006d2c;
   padding: 0.35rem 1.25rem;
@@ -753,7 +802,7 @@
 #home .home-thumb .row {
   padding-right: 0.75rem;
 }
-#home .home-thumb .col-8 {
+#home .home-thumb .row .col-8 {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid rgba(71, 86, 123, 0.5);
 }
@@ -762,10 +811,12 @@
 }
 @media screen and (min-width: 576px) {
   #home .home-thumb {
-    width: 50%;
+    width: 100%;
   }
-  #home .home-thumb:last-child .col-8 {
-    border-bottom: 1px solid rgba(71, 86, 123, 0.5);
+}
+@media screen and (min-width: 768px) {
+  #home .home-thumb {
+    width: 50%;
   }
 }
 @media screen and (min-width: 991px) {
@@ -913,6 +964,12 @@
   color: #132656;
   font-size: 1.125rem;
 }
+@media screen and (max-width: 576px) {
+  .post-share h5 {
+    font-size: 1rem;
+    margin-bottom: 1.125rem;
+  }
+}
 .post-share a {
   color: #fff;
   border-radius: 0.125rem;
@@ -966,7 +1023,6 @@
   color: #fff;
   border: none;
   padding: 0.25rem 0.75rem;
-  border-radius: 0.125rem;
 }
 
 #partners h5 {
@@ -1047,6 +1103,14 @@
     text-align: left;
   }
 }
+@media screen and (max-width: 576px) {
+  .director-container .director-card:last-child,
+  .director-container .team-card:last-child,
+  .team-container .director-card:last-child,
+  .team-container .team-card:last-child {
+    border-bottom: none;
+  }
+}
 .director-container .director-card .director-detail,
 .director-container .director-card .team-detail,
 .director-container .team-card .director-detail,
@@ -1120,6 +1184,25 @@
 .team-container .team-card .team-detail p.director-info a,
 .team-container .team-card .team-detail p.team-info a {
   color: #132656;
+}
+@media screen and (max-width: 768px) {
+  .director-container .director-card .director-detail p.director-info, .director-container .director-card .director-detail p.team-info,
+  .director-container .director-card .team-detail p.director-info,
+  .director-container .director-card .team-detail p.team-info,
+  .director-container .team-card .director-detail p.director-info,
+  .director-container .team-card .director-detail p.team-info,
+  .director-container .team-card .team-detail p.director-info,
+  .director-container .team-card .team-detail p.team-info,
+  .team-container .director-card .director-detail p.director-info,
+  .team-container .director-card .director-detail p.team-info,
+  .team-container .director-card .team-detail p.director-info,
+  .team-container .director-card .team-detail p.team-info,
+  .team-container .team-card .director-detail p.director-info,
+  .team-container .team-card .director-detail p.team-info,
+  .team-container .team-card .team-detail p.director-info,
+  .team-container .team-card .team-detail p.team-info {
+    font-size: 0.8135rem;
+  }
 }
 .director-container .director-card .director-detail h3,
 .director-container .director-card .team-detail h3,
@@ -1281,6 +1364,11 @@
 #events .events-container .event-card h4 {
   color: #132656;
 }
+@media screen and (max-width: 576px) {
+  #events .events-container .event-card h4 {
+    font-size: 1.125rem;
+  }
+}
 #events .events-container .event-card .event-detail p {
   display: flex;
   align-items: center;
@@ -1288,7 +1376,7 @@
   font-family: "poppins-semibold";
   color: #132656;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
   #events .events-container .event-card .event-detail p {
     font-size: 1rem;
   }
@@ -1298,6 +1386,11 @@
 }
 #events .events-container .event-card:last-child {
   border-bottom: none;
+}
+@media screen and (max-width: 768px) {
+  #events .events-container .event-card:last-child {
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-width: 991px) {
   #events {
@@ -1315,6 +1408,15 @@
   .related-event-card a {
     font-size: 1rem;
   }
+}
+.related-event-card .d-flex {
+  align-items: end;
+}
+.related-event-card .d-flex img {
+  width: 18px;
+}
+.related-event-card .d-flex h6 {
+  font-size: 0.875rem;
 }
 .related-event-card p {
   padding-left: 0.5rem;
@@ -1346,7 +1448,6 @@
   margin-bottom: 0;
   padding-top: 2rem;
   color: #fff;
-  font-size: 1.175rem;
 }
 #about-us .special-about .special-about-text:after {
   content: "";
@@ -1370,6 +1471,7 @@
     padding: 2.5rem;
   }
   #about-us .special-about .special-about-text {
+    font-size: 1.175rem;
     padding: 2rem 0;
   }
   #about-us .special-about .special-about-text::after, #about-us .special-about .special-about-text::before {
@@ -1432,6 +1534,12 @@
 }
 #contact .contact-detail {
   padding: 3rem 1.75rem;
+}
+#contact .contact-detail a {
+  color: #000;
+}
+#contact .contact-detail a:hover {
+  color: #00531d;
 }
 #contact .location-map,
 #contact .contact-detail {
@@ -1523,8 +1631,16 @@
 #career-detail {
   margin-bottom: 3rem;
 }
-#career-detail .career-info h3 {
+#career-detail .career-detail-text .career-info h3 {
   color: #132656;
+}
+@media screen and (max-width: 768px) {
+  #career-detail .career-detail-text ul li {
+    font-size: 0.875rem;
+  }
+  #career-detail .career-detail-text ul li img {
+    width: 18px;
+  }
 }
 
 .connect-with-us-body strong {
@@ -1605,6 +1721,14 @@
 .policy-container .policy-card strong {
   color: #132656;
 }
+@media screen and (max-width: 768px) {
+  .policy-container .policy-card .d-flex {
+    align-items: end;
+  }
+  .policy-container .policy-card .d-flex img {
+    width: 18px;
+  }
+}
 
 .publication-container {
   margin-bottom: 3rem;
@@ -1681,7 +1805,9 @@
 .publication-container .publication-card .book-details .publish-date span {
   font-family: "poppins-medium";
 }
-.publication-container .publication-card .book-details button {
+.publication-container .publication-card .book-details a.download {
+  display: inline-block;
+  font-size: inherit;
   background-color: #cc0000;
   color: #fff;
   padding: 0.25rem 1.25rem;
@@ -1693,6 +1819,11 @@
 }
 .publication-container .publication-card:last-child {
   border-bottom: none;
+}
+@media screen and (max-width: 991px) {
+  .publication-container .publication-card:last-child {
+    padding-bottom: 0;
+  }
 }
 
 body {
@@ -1739,7 +1870,7 @@ h2 {
 
 @media screen and (max-width: 1600px) {
   h5 {
-    font-size: 1.235rem;
+    font-size: 1.15rem;
   }
 }
 
@@ -1758,6 +1889,10 @@ h4 a,
 h5 a,
 h6 a {
   color: #132656;
+}
+
+h5 {
+  font-size: 1.125rem;
 }
 
 .common-title-lg {
@@ -1836,6 +1971,17 @@ h6 a {
   font-family: "poppins-medium";
 }
 
+@media screen and (max-width: 768px) {
+  .nav-title h2 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-title h5 {
+    font-size: 0.875rem;
+  }
+}
+
 .training-detail-body h1,
 .event-detail-body h1 {
   color: #132656;
@@ -1864,15 +2010,37 @@ h6 a {
 .training-status,
 .event-status {
   position: relative;
-  padding: 1.5rem 3rem;
+  padding: 2.5rem 3rem;
   border: 2px solid #cc0000;
   border-radius: 0.75rem;
   margin: 3rem 0;
+}
+@media screen and (max-width: 768px) {
+  .training-status,
+  .event-status {
+    padding: 1.75rem 1.25rem;
+  }
+  .training-status img,
+  .event-status img {
+    height: 16px;
+  }
 }
 .training-status h5,
 .event-status h5 {
   color: #132656;
   margin-left: 0.75rem;
+}
+@media screen and (max-widtH: 991px) {
+  .training-status h5,
+  .event-status h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .training-status h5,
+  .event-status h5 {
+    font-size: 0.875rem;
+  }
 }
 .training-status .mini-status,
 .event-status .mini-status {
@@ -1922,8 +2090,23 @@ h6 a {
 .career-detail-text ul li img {
   margin-right: 0.5rem;
 }
+@media screen and (max-width: 768px) {
+  .training-detail-text ul li,
+  .event-detail-text ul li,
+  .career-detail-text ul li {
+    font-size: 0.875rem;
+  }
+  .training-detail-text ul li img,
+  .event-detail-text ul li img,
+  .career-detail-text ul li img {
+    width: 18px;
+  }
+}
+.training-detail-text a,
 .training-detail-text button,
+.event-detail-text a,
 .event-detail-text button,
+.career-detail-text a,
 .career-detail-text button {
   margin-bottom: 1rem;
   border: none;
@@ -1932,20 +2115,18 @@ h6 a {
   color: #fff;
   border-radius: 0.35rem;
 }
+.training-detail-text a.btn-success,
 .training-detail-text button.btn-success,
+.event-detail-text a.btn-success,
 .event-detail-text button.btn-success,
+.career-detail-text a.btn-success,
 .career-detail-text button.btn-success {
   background-color: #003f14;
 }
 
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1100px;
-  }
-}
 @media screen and (min-width: 1400px) {
   .container {
-    max-width: 1070px;
+    max-width: 1100px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -2037,10 +2218,6 @@ h6 a {
   color: #fff;
 }
 
-.row {
-  --bs-gutter-x: 1.875rem;
-}
-
 .trade-data-card,
 .useful-link-card {
   padding: 2.5rem 0;
@@ -2087,7 +2264,10 @@ h6 a {
   font-size: 1.1575rem;
 }
 .trade-data-card .row .col-lg-8 button,
-.useful-link-card .row .col-lg-8 button {
+.trade-data-card .row .col-lg-8 a.visit,
+.useful-link-card .row .col-lg-8 button,
+.useful-link-card .row .col-lg-8 a.visit {
+  display: inline-block;
   background-color: #003f14;
   color: #fff;
   border: none;
@@ -2096,18 +2276,51 @@ h6 a {
   font-size: 1rem;
   font-family: "poppins-semibold";
 }
+@media screen and (max-width: 991px) {
+  .trade-data-card .row .col-lg-8 h4,
+  .useful-link-card .row .col-lg-8 h4 {
+    font-size: 1.125rem;
+  }
+  .trade-data-card .row .col-lg-8 a,
+  .trade-data-card .row .col-lg-8 button,
+  .trade-data-card .row .col-lg-8 .visit,
+  .useful-link-card .row .col-lg-8 a,
+  .useful-link-card .row .col-lg-8 button,
+  .useful-link-card .row .col-lg-8 .visit {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .trade-data-card .row .col-lg-8 a,
+  .trade-data-card .row .col-lg-8 button,
+  .trade-data-card .row .col-lg-8 a.visit,
+  .useful-link-card .row .col-lg-8 a,
+  .useful-link-card .row .col-lg-8 button,
+  .useful-link-card .row .col-lg-8 a.visit {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .trade-data-card,
+  .useful-link-card {
+    padding-bottom: 0;
+  }
+}
 
 .chairman-card {
   text-align: center;
   width: 100%;
   background-color: #d4e6db;
-  padding: 1.75rem 1.25rem;
+  padding: 2rem 1.25rem 3rem;
   border-radius: 0.75rem;
+}
+.chairman-card img {
+  width: 75%;
 }
 .chairman-card span {
   margin: 0.75rem 0;
   font-family: "poppins-medium";
-  color: #387e52;
+  color: #00a643;
 }
 .chairman-card h5,
 .chairman-card p {
@@ -2115,9 +2328,40 @@ h6 a {
 }
 .chairman-card h5 {
   margin-bottom: 1.5rem;
+  font-size: 1.15rem;
 }
 .chairman-card p {
   font-family: "poppins-semibold";
   margin-bottom: 0;
   font-size: 0.75rem;
+}
+@media screen and (max-width: 576px) {
+  .chairman-card {
+    padding: 2rem 1.25rem 1.25rem;
+  }
+}
+
+.select-filter {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: auto;
+  display: inline-block;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  background-color: #006d2c;
+  border: 1px solid #006d2c;
+  color: #fff !important;
+  border-radius: 0.25rem;
+  background-image: url(../../bfti-project/assets/icons/angle-down.png);
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 11px;
+}
+.select-filter option {
+  background-color: #fff;
+  color: #00531d;
+}
+
+.rounded-1 {
+  border-radius: 0.1875rem !important;
 }

@@ -16,7 +16,6 @@
       margin-bottom: 0;
       padding-top: 2rem;
       color: $white;
-      font-size: 1.175rem;
 
       &:after {
         content: '';
@@ -42,6 +41,7 @@
       padding: 2.5rem;
 
       .special-about-text {
+        font-size: 1.175rem;
         padding: 2rem 0;
 
         &::after,

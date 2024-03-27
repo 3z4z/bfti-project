@@ -68,6 +68,11 @@
   h5 {
     color: $body-heading-color;
     font-size: 1.125rem;
+
+    @media screen and (max-width: 576px) {
+      font-size: 1rem;
+      margin-bottom: 1.125rem;
+    }
   }
 
   a {
@@ -133,6 +138,5 @@
     color: $white;
     border: none;
     padding: 0.25rem 0.75rem;
-    border-radius: 0.125rem;
   }
 }
